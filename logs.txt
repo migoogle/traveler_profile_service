@@ -1,0 +1,1045 @@
+2025-12-05T14:42:34.375876Z	Default STARTUP TCP probe succeeded after 1 attempt for container "traveler-profile-service-1" on port 8080.
+2025-12-05T14:42:34.369324Z	[2025-12-05 14:42:34 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T14:42:34.355178Z	[2025-12-05 14:42:34 +0000] [1] [INFO] Using worker: sync
+2025-12-05T14:42:34.355107Z	[2025-12-05 14:42:34 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T14:42:34.353027Z	[2025-12-05 14:42:34 +0000] [1] [INFO] Starting gunicorn 23.0.0
+2025-12-05T14:42:34.332336Z	
+2025-12-05T14:42:33.463738Z	Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.
+2025-12-05T14:42:33.039034Z	
+2025-12-05T14:42:32.974671Z	[2025-12-05 14:42:32 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T14:42:32.967435Z	Default STARTUP TCP probe succeeded after 1 attempt for container "traveler-profile-service-1" on port 8080.
+2025-12-05T14:42:32.962612Z	[2025-12-05 14:42:32 +0000] [1] [INFO] Using worker: sync
+2025-12-05T14:42:32.962536Z	[2025-12-05 14:42:32 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T14:42:32.960563Z	[2025-12-05 14:42:32 +0000] [1] [INFO] Starting gunicorn 23.0.0
+2025-12-05T14:42:32.226675Z	Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.
+2025-12-05T14:42:27.322507Z	
+2025-12-05T14:38:13.314238Z	}
+2025-12-05T14:38:13.314234Z	  }
+2025-12-05T14:38:13.314229Z	    "document_limitations": null
+2025-12-05T14:38:13.314225Z	    "safety_tools_usage": null,
+2025-12-05T14:38:13.314220Z	    "payment_preference": null,
+2025-12-05T14:38:13.314216Z	    "current_insurance_provider": null,
+2025-12-05T14:38:13.314212Z	    "is_business_purpose": null,
+2025-12-05T14:38:13.314207Z	    "winter_conditions_travel": null,
+2025-12-05T14:38:13.314203Z	    "interested_in_insurance": null,
+2025-12-05T14:38:13.314199Z	    "has_valid_passport": null,
+2025-12-05T14:38:13.314194Z	    "is_primary_traveler": null,
+2025-12-05T14:38:13.314190Z	    "has_loyalty_program": null,
+2025-12-05T14:38:13.314186Z	    "has_booked_before": null,
+2025-12-05T14:38:13.314181Z	    "planned_booking_date": null,
+2025-12-05T14:38:13.314177Z	    "primary_stay_location": null,
+2025-12-05T14:38:13.314172Z	    "preferred_departure_details": null,
+2025-12-05T14:38:13.314168Z	    "trip_end_date": null,
+2025-12-05T14:38:13.314163Z	    "trip_start_date": null,
+2025-12-05T14:38:13.314159Z	    "phone_number": "5551239999",
+2025-12-05T14:38:13.314155Z	    "email_address": "aven@email.com",
+2025-12-05T14:38:13.314150Z	    "date_of_birth": "10-05-1985",
+2025-12-05T14:38:13.314146Z	    "client_last_name": "Chen",
+2025-12-05T14:38:13.314141Z	    "client_first_name": "Ava",
+2025-12-05T14:38:13.314137Z	  "travelerProfileForm": {
+2025-12-05T14:38:13.314132Z	  },
+2025-12-05T14:38:13.314127Z	    "document_limitations": " "
+2025-12-05T14:38:13.314123Z	    "safety_tools_usage": " ",
+2025-12-05T14:38:13.314119Z	    "payment_preference": " ",
+2025-12-05T14:38:13.314114Z	    "current_insurance_provider": " ",
+2025-12-05T14:38:13.314110Z	    "is_business_purpose": " ",
+2025-12-05T14:38:13.314105Z	    "winter_conditions_travel": " ",
+2025-12-05T14:38:13.314100Z	    "interested_in_insurance": " ",
+2025-12-05T14:38:13.314096Z	    "has_valid_passport": " ",
+2025-12-05T14:38:13.314091Z	    "is_primary_traveler": " ",
+2025-12-05T14:38:13.314087Z	    "has_loyalty_program": " ",
+2025-12-05T14:38:13.314082Z	    "has_booked_before": " ",
+2025-12-05T14:38:13.314077Z	    "planned_booking_date": " ",
+2025-12-05T14:38:13.314073Z	    "primary_stay_location": " ",
+2025-12-05T14:38:13.314068Z	    "preferred_departure_details": " ",
+2025-12-05T14:38:13.314063Z	    "trip_end_date": " ",
+2025-12-05T14:38:13.314059Z	    "trip_start_date": " ",
+2025-12-05T14:38:13.314054Z	    "phone_number": "5551239999",
+2025-12-05T14:38:13.314049Z	    "email_address": "aven@email.com",
+2025-12-05T14:38:13.314044Z	    "date_of_birth": "10-05-1985",
+2025-12-05T14:38:13.314040Z	    "client_last_name": "Chen",
+2025-12-05T14:38:13.314035Z	    "client_first_name": "Ava",
+2025-12-05T14:38:13.314030Z	  "agentDisplayMessage": {
+2025-12-05T14:38:13.314025Z	INFO:app:[APP] {
+2025-12-05T14:38:13.313859Z	INFO:app:[APP] --- Sending Response ---
+2025-12-05T14:38:13.313828Z	}
+2025-12-05T14:38:13.313823Z	  "phone_number": "5551239999"
+2025-12-05T14:38:13.313818Z	  "email_address": "aven@email.com",
+2025-12-05T14:38:13.313813Z	  "date_of_birth": "10-05-1985",
+2025-12-05T14:38:13.313809Z	  "client_last_name": "Chen",
+2025-12-05T14:38:13.313804Z	  "client_first_name": "Ava",
+2025-12-05T14:38:13.313798Z	INFO:app:[APP] {
+2025-12-05T14:38:13.313655Z	INFO:app:[APP] --- Received Request ---
+2025-12-05T14:38:13.309974Z	
+2025-12-05T14:37:45.735393Z	}
+2025-12-05T14:37:45.735389Z	  }
+2025-12-05T14:37:45.735385Z	    "document_limitations": null
+2025-12-05T14:37:45.735380Z	    "safety_tools_usage": null,
+2025-12-05T14:37:45.735376Z	    "payment_preference": null,
+2025-12-05T14:37:45.735363Z	    "current_insurance_provider": null,
+2025-12-05T14:37:45.735354Z	    "is_business_purpose": null,
+2025-12-05T14:37:45.735345Z	    "winter_conditions_travel": null,
+2025-12-05T14:37:45.735340Z	    "interested_in_insurance": null,
+2025-12-05T14:37:45.735335Z	    "has_valid_passport": null,
+2025-12-05T14:37:45.735330Z	    "is_primary_traveler": null,
+2025-12-05T14:37:45.735325Z	    "has_loyalty_program": null,
+2025-12-05T14:37:45.735321Z	    "has_booked_before": null,
+2025-12-05T14:37:45.735316Z	    "planned_booking_date": null,
+2025-12-05T14:37:45.735312Z	    "primary_stay_location": null,
+2025-12-05T14:37:45.735307Z	    "preferred_departure_details": null,
+2025-12-05T14:37:45.735302Z	    "trip_end_date": null,
+2025-12-05T14:37:45.735298Z	    "trip_start_date": null,
+2025-12-05T14:37:45.735294Z	    "phone_number": null,
+2025-12-05T14:37:45.735289Z	    "email_address": "aven@email.com",
+2025-12-05T14:37:45.735285Z	    "date_of_birth": "10-05-1985",
+2025-12-05T14:37:45.735280Z	    "client_last_name": "Chen",
+2025-12-05T14:37:45.735276Z	    "client_first_name": "Ava",
+2025-12-05T14:37:45.735271Z	  "travelerProfileForm": {
+2025-12-05T14:37:45.735266Z	  },
+2025-12-05T14:37:45.735261Z	    "document_limitations": " "
+2025-12-05T14:37:45.735257Z	    "safety_tools_usage": " ",
+2025-12-05T14:37:45.735252Z	    "payment_preference": " ",
+2025-12-05T14:37:45.735248Z	    "current_insurance_provider": " ",
+2025-12-05T14:37:45.735243Z	    "is_business_purpose": " ",
+2025-12-05T14:37:45.735239Z	    "winter_conditions_travel": " ",
+2025-12-05T14:37:45.735233Z	    "interested_in_insurance": " ",
+2025-12-05T14:37:45.735228Z	    "has_valid_passport": " ",
+2025-12-05T14:37:45.735223Z	    "is_primary_traveler": " ",
+2025-12-05T14:37:45.735219Z	    "has_loyalty_program": " ",
+2025-12-05T14:37:45.735214Z	    "has_booked_before": " ",
+2025-12-05T14:37:45.735210Z	    "planned_booking_date": " ",
+2025-12-05T14:37:45.735205Z	    "primary_stay_location": " ",
+2025-12-05T14:37:45.735201Z	    "preferred_departure_details": " ",
+2025-12-05T14:37:45.735196Z	    "trip_end_date": " ",
+2025-12-05T14:37:45.735191Z	    "trip_start_date": " ",
+2025-12-05T14:37:45.735187Z	    "phone_number": " ",
+2025-12-05T14:37:45.735182Z	    "email_address": "aven@email.com",
+2025-12-05T14:37:45.735177Z	    "date_of_birth": "10-05-1985",
+2025-12-05T14:37:45.735169Z	    "client_last_name": "Chen",
+2025-12-05T14:37:45.735164Z	    "client_first_name": "Ava",
+2025-12-05T14:37:45.735159Z	  "agentDisplayMessage": {
+2025-12-05T14:37:45.735153Z	INFO:app:[APP] {
+2025-12-05T14:37:45.735024Z	INFO:app:[APP] --- Sending Response ---
+2025-12-05T14:37:45.734990Z	}
+2025-12-05T14:37:45.734986Z	  "email_address": "aven@email.com"
+2025-12-05T14:37:45.734981Z	  "date_of_birth": "10-05-1985",
+2025-12-05T14:37:45.734977Z	  "client_last_name": "Chen",
+2025-12-05T14:37:45.734972Z	  "client_first_name": "Ava",
+2025-12-05T14:37:45.734966Z	INFO:app:[APP] {
+2025-12-05T14:37:45.734890Z	INFO:app:[APP] --- Received Request ---
+2025-12-05T14:37:44.984418Z	[2025-12-05 14:37:44 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T14:37:44.973896Z	Default STARTUP TCP probe succeeded after 1 attempt for container "traveler-profile-service-1" on port 8080.
+2025-12-05T14:37:44.973214Z	[2025-12-05 14:37:44 +0000] [1] [INFO] Using worker: sync
+2025-12-05T14:37:44.973013Z	[2025-12-05 14:37:44 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T14:37:44.970833Z	[2025-12-05 14:37:44 +0000] [1] [INFO] Starting gunicorn 23.0.0
+2025-12-05T14:37:44.100815Z	Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.
+2025-12-05T14:37:44.081439Z	
+2025-12-05T13:54:56.939683Z	[2025-12-05 13:54:56 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T13:54:56.840035Z	[2025-12-05 13:54:56 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T13:54:56.838774Z	[2025-12-05 13:54:56 +0000] [1] [INFO] Handling signal: term
+2025-12-05T13:39:52.744848Z	}
+2025-12-05T13:39:52.744844Z	  }
+2025-12-05T13:39:52.744841Z	    "document_limitations": null
+2025-12-05T13:39:52.744838Z	    "safety_tools_usage": null,
+2025-12-05T13:39:52.744835Z	    "payment_preference": null,
+2025-12-05T13:39:52.744832Z	    "current_insurance_provider": null,
+2025-12-05T13:39:52.744829Z	    "is_business_purpose": null,
+2025-12-05T13:39:52.744826Z	    "winter_conditions_travel": null,
+2025-12-05T13:39:52.744823Z	    "interested_in_insurance": null,
+2025-12-05T13:39:52.744820Z	    "has_valid_passport": null,
+2025-12-05T13:39:52.744816Z	    "is_primary_traveler": null,
+2025-12-05T13:39:52.744812Z	    "has_loyalty_program": null,
+2025-12-05T13:39:52.744808Z	    "has_booked_before": null,
+2025-12-05T13:39:52.744803Z	    "planned_booking_date": null,
+2025-12-05T13:39:52.744799Z	    "primary_stay_location": "Costa Rica",
+2025-12-05T13:39:52.744795Z	    "preferred_departure_details": null,
+2025-12-05T13:39:52.744791Z	    "trip_end_date": "29-12-2025",
+2025-12-05T13:39:52.744787Z	    "trip_start_date": "15-12-2025",
+2025-12-05T13:39:52.744783Z	    "phone_number": "5551239999",
+2025-12-05T13:39:52.744780Z	    "email_address": "avetin@email.com",
+2025-12-05T13:39:52.744776Z	    "date_of_birth": "01-06-1985",
+2025-12-05T13:39:52.744773Z	    "client_last_name": "Chen",
+2025-12-05T13:39:52.744770Z	    "client_first_name": "Ava",
+2025-12-05T13:39:52.744767Z	  "travelerProfileForm": {
+2025-12-05T13:39:52.744764Z	  },
+2025-12-05T13:39:52.744761Z	    "document_limitations": " "
+2025-12-05T13:39:52.744758Z	    "safety_tools_usage": " ",
+2025-12-05T13:39:52.744755Z	    "payment_preference": " ",
+2025-12-05T13:39:52.744752Z	    "current_insurance_provider": " ",
+2025-12-05T13:39:52.744749Z	    "is_business_purpose": " ",
+2025-12-05T13:39:52.744746Z	    "winter_conditions_travel": " ",
+2025-12-05T13:39:52.744742Z	    "interested_in_insurance": " ",
+2025-12-05T13:39:52.744739Z	    "has_valid_passport": " ",
+2025-12-05T13:39:52.744735Z	    "is_primary_traveler": " ",
+2025-12-05T13:39:52.744732Z	    "has_loyalty_program": " ",
+2025-12-05T13:39:52.744729Z	    "has_booked_before": " ",
+2025-12-05T13:39:52.744725Z	    "planned_booking_date": " ",
+2025-12-05T13:39:52.744723Z	    "primary_stay_location": "Costa Rica",
+2025-12-05T13:39:52.744718Z	    "preferred_departure_details": " ",
+2025-12-05T13:39:52.744714Z	    "trip_end_date": "29-12-2025",
+2025-12-05T13:39:52.744710Z	    "trip_start_date": "15-12-2025",
+2025-12-05T13:39:52.744706Z	    "phone_number": "5551239999",
+2025-12-05T13:39:52.744702Z	    "email_address": "avetin@email.com",
+2025-12-05T13:39:52.744699Z	    "date_of_birth": "01-06-1985",
+2025-12-05T13:39:52.744696Z	    "client_last_name": "Chen",
+2025-12-05T13:39:52.744692Z	    "client_first_name": "Ava",
+2025-12-05T13:39:52.744689Z	  "agentDisplayMessage": {
+2025-12-05T13:39:52.744685Z	INFO:app:[APP] {
+2025-12-05T13:39:52.744540Z	INFO:app:[APP] --- Sending Response ---
+2025-12-05T13:39:52.744521Z	}
+2025-12-05T13:39:52.744518Z	  "trip_start_date": "15-12-2025"
+2025-12-05T13:39:52.744515Z	  "trip_end_date": "29-12-2025",
+2025-12-05T13:39:52.744511Z	  "primary_stay_location": "Costa Rica",
+2025-12-05T13:39:52.744508Z	  "phone_number": "5551239999",
+2025-12-05T13:39:52.744505Z	  "email_address": "avetin@email.com",
+2025-12-05T13:39:52.744500Z	  "date_of_birth": "01-06-1985",
+2025-12-05T13:39:52.744496Z	  "client_last_name": "Chen",
+2025-12-05T13:39:52.744492Z	  "client_first_name": "Ava",
+2025-12-05T13:39:52.744482Z	INFO:app:[APP] {
+2025-12-05T13:39:52.744343Z	INFO:app:[APP] --- Received Request ---
+2025-12-05T13:39:52.734713Z	
+2025-12-05T13:25:56.592234Z	}
+2025-12-05T13:25:56.592230Z	  }
+2025-12-05T13:25:56.592226Z	    "document_limitations": null
+2025-12-05T13:25:56.592221Z	    "safety_tools_usage": null,
+2025-12-05T13:25:56.592212Z	    "payment_preference": null,
+2025-12-05T13:25:56.592208Z	    "current_insurance_provider": null,
+2025-12-05T13:25:56.592204Z	    "is_business_purpose": null,
+2025-12-05T13:25:56.592199Z	    "winter_conditions_travel": null,
+2025-12-05T13:25:56.592195Z	    "interested_in_insurance": null,
+2025-12-05T13:25:56.592190Z	    "has_valid_passport": null,
+2025-12-05T13:25:56.592186Z	    "is_primary_traveler": null,
+2025-12-05T13:25:56.592181Z	    "has_loyalty_program": null,
+2025-12-05T13:25:56.592177Z	    "has_booked_before": null,
+2025-12-05T13:25:56.592171Z	    "planned_booking_date": null,
+2025-12-05T13:25:56.592166Z	    "primary_stay_location": null,
+2025-12-05T13:25:56.592162Z	    "preferred_departure_details": null,
+2025-12-05T13:25:56.592158Z	    "trip_end_date": "29-12-2025",
+2025-12-05T13:25:56.592153Z	    "trip_start_date": "15-12-2025",
+2025-12-05T13:25:56.592149Z	    "phone_number": null,
+2025-12-05T13:25:56.592144Z	    "email_address": "AvaChen@email.com",
+2025-12-05T13:25:56.592140Z	    "date_of_birth": "08-05-1985",
+2025-12-05T13:25:56.592136Z	    "client_last_name": "Chen",
+2025-12-05T13:25:56.592131Z	    "client_first_name": "Ava",
+2025-12-05T13:25:56.592126Z	  "travelerProfileForm": {
+2025-12-05T13:25:56.592121Z	  },
+2025-12-05T13:25:56.592117Z	    "document_limitations": " "
+2025-12-05T13:25:56.592113Z	    "safety_tools_usage": " ",
+2025-12-05T13:25:56.592108Z	    "payment_preference": " ",
+2025-12-05T13:25:56.592104Z	    "current_insurance_provider": " ",
+2025-12-05T13:25:56.592099Z	    "is_business_purpose": " ",
+2025-12-05T13:25:56.592095Z	    "winter_conditions_travel": " ",
+2025-12-05T13:25:56.592090Z	    "interested_in_insurance": " ",
+2025-12-05T13:25:56.592086Z	    "has_valid_passport": " ",
+2025-12-05T13:25:56.592081Z	    "is_primary_traveler": " ",
+2025-12-05T13:25:56.592076Z	    "has_loyalty_program": " ",
+2025-12-05T13:25:56.592072Z	    "has_booked_before": " ",
+2025-12-05T13:25:56.592067Z	    "planned_booking_date": " ",
+2025-12-05T13:25:56.592063Z	    "primary_stay_location": " ",
+2025-12-05T13:25:56.592058Z	    "preferred_departure_details": " ",
+2025-12-05T13:25:56.592054Z	    "trip_end_date": "29-12-2025",
+2025-12-05T13:25:56.592037Z	    "trip_start_date": "15-12-2025",
+2025-12-05T13:25:56.592033Z	    "phone_number": " ",
+2025-12-05T13:25:56.592028Z	    "email_address": "AvaChen@email.com",
+2025-12-05T13:25:56.592023Z	    "date_of_birth": "08-05-1985",
+2025-12-05T13:25:56.592018Z	    "client_last_name": "Chen",
+2025-12-05T13:25:56.592014Z	    "client_first_name": "Ava",
+2025-12-05T13:25:56.592008Z	  "agentDisplayMessage": {
+2025-12-05T13:25:56.592003Z	INFO:app:[APP] {
+2025-12-05T13:25:56.591841Z	INFO:app:[APP] --- Sending Response ---
+2025-12-05T13:25:56.591836Z	}
+2025-12-05T13:25:56.591831Z	  "trip_start_date": "15-12-2025"
+2025-12-05T13:25:56.591827Z	  "trip_end_date": "29-12-2025",
+2025-12-05T13:25:56.591822Z	  "email_address": "AvaChen@email.com",
+2025-12-05T13:25:56.591817Z	  "date_of_birth": "08-05-1985",
+2025-12-05T13:25:56.591812Z	  "client_last_name": "Chen",
+2025-12-05T13:25:56.591807Z	  "client_first_name": "Ava",
+2025-12-05T13:25:56.591795Z	INFO:app:[APP] {
+2025-12-05T13:25:56.591673Z	INFO:app:[APP] --- Received Request ---
+2025-12-05T13:25:56.583239Z	
+2025-12-05T13:15:02.235785Z	}
+2025-12-05T13:15:02.235780Z	  }
+2025-12-05T13:15:02.235776Z	    "document_limitations": null
+2025-12-05T13:15:02.235772Z	    "safety_tools_usage": null,
+2025-12-05T13:15:02.235768Z	    "payment_preference": null,
+2025-12-05T13:15:02.235764Z	    "current_insurance_provider": null,
+2025-12-05T13:15:02.235759Z	    "is_business_purpose": null,
+2025-12-05T13:15:02.235754Z	    "winter_conditions_travel": null,
+2025-12-05T13:15:02.235750Z	    "interested_in_insurance": null,
+2025-12-05T13:15:02.235744Z	    "has_valid_passport": null,
+2025-12-05T13:15:02.235740Z	    "is_primary_traveler": null,
+2025-12-05T13:15:02.235736Z	    "has_loyalty_program": null,
+2025-12-05T13:15:02.235727Z	    "has_booked_before": false,
+2025-12-05T13:15:02.235723Z	    "planned_booking_date": null,
+2025-12-05T13:15:02.235718Z	    "primary_stay_location": null,
+2025-12-05T13:15:02.235713Z	    "preferred_departure_details": null,
+2025-12-05T13:15:02.235709Z	    "trip_end_date": null,
+2025-12-05T13:15:02.235706Z	    "trip_start_date": null,
+2025-12-05T13:15:02.235702Z	    "phone_number": "1030030495",
+2025-12-05T13:15:02.235698Z	    "email_address": "ava.chen@gmail.com",
+2025-12-05T13:15:02.235694Z	    "date_of_birth": "14-05-1934",
+2025-12-05T13:15:02.235690Z	    "client_last_name": "Chen",
+2025-12-05T13:15:02.235686Z	    "client_first_name": "Ava",
+2025-12-05T13:15:02.235682Z	  "travelerProfileForm": {
+2025-12-05T13:15:02.235678Z	  },
+2025-12-05T13:15:02.235673Z	    "document_limitations": " "
+2025-12-05T13:15:02.235670Z	    "safety_tools_usage": " ",
+2025-12-05T13:15:02.235666Z	    "payment_preference": " ",
+2025-12-05T13:15:02.235662Z	    "current_insurance_provider": " ",
+2025-12-05T13:15:02.235659Z	    "is_business_purpose": " ",
+2025-12-05T13:15:02.235655Z	    "winter_conditions_travel": " ",
+2025-12-05T13:15:02.235651Z	    "interested_in_insurance": " ",
+2025-12-05T13:15:02.235647Z	    "has_valid_passport": " ",
+2025-12-05T13:15:02.235643Z	    "is_primary_traveler": " ",
+2025-12-05T13:15:02.235639Z	    "has_loyalty_program": " ",
+2025-12-05T13:15:02.235635Z	    "has_booked_before": "False",
+2025-12-05T13:15:02.235631Z	    "planned_booking_date": " ",
+2025-12-05T13:15:02.235627Z	    "primary_stay_location": " ",
+2025-12-05T13:15:02.235623Z	    "preferred_departure_details": " ",
+2025-12-05T13:15:02.235619Z	    "trip_end_date": " ",
+2025-12-05T13:15:02.235615Z	    "trip_start_date": " ",
+2025-12-05T13:15:02.235610Z	    "phone_number": "1030030495",
+2025-12-05T13:15:02.235606Z	    "email_address": "ava.chen@gmail.com",
+2025-12-05T13:15:02.235602Z	    "date_of_birth": "14-05-1934",
+2025-12-05T13:15:02.235598Z	    "client_last_name": "Chen",
+2025-12-05T13:15:02.235594Z	    "client_first_name": "Ava",
+2025-12-05T13:15:02.235589Z	  "agentDisplayMessage": {
+2025-12-05T13:15:02.235580Z	INFO:app:[APP] {
+2025-12-05T13:15:02.235405Z	INFO:app:[APP] --- Sending Response ---
+2025-12-05T13:15:02.235400Z	}
+2025-12-05T13:15:02.235395Z	  "phone_number": "1030030495"
+2025-12-05T13:15:02.235390Z	  "has_booked_before": false,
+2025-12-05T13:15:02.235377Z	  "email_address": "ava.chen@gmail.com",
+2025-12-05T13:15:02.235373Z	  "date_of_birth": "14-05-1934",
+2025-12-05T13:15:02.235369Z	  "client_last_name": "Chen",
+2025-12-05T13:15:02.235363Z	  "client_first_name": "Ava",
+2025-12-05T13:15:02.235353Z	INFO:app:[APP] {
+2025-12-05T13:15:02.235228Z	INFO:app:[APP] --- Received Request ---
+2025-12-05T13:15:02.225136Z	
+2025-12-05T13:13:04.142969Z	}
+2025-12-05T13:13:04.142965Z	  }
+2025-12-05T13:13:04.142961Z	    "document_limitations": null
+2025-12-05T13:13:04.142956Z	    "safety_tools_usage": null,
+2025-12-05T13:13:04.142952Z	    "payment_preference": null,
+2025-12-05T13:13:04.142948Z	    "current_insurance_provider": null,
+2025-12-05T13:13:04.142943Z	    "is_business_purpose": null,
+2025-12-05T13:13:04.142939Z	    "winter_conditions_travel": null,
+2025-12-05T13:13:04.142935Z	    "interested_in_insurance": null,
+2025-12-05T13:13:04.142930Z	    "has_valid_passport": null,
+2025-12-05T13:13:04.142926Z	    "is_primary_traveler": null,
+2025-12-05T13:13:04.142922Z	    "has_loyalty_program": null,
+2025-12-05T13:13:04.142918Z	    "has_booked_before": null,
+2025-12-05T13:13:04.142914Z	    "planned_booking_date": null,
+2025-12-05T13:13:04.142909Z	    "primary_stay_location": null,
+2025-12-05T13:13:04.142905Z	    "preferred_departure_details": null,
+2025-12-05T13:13:04.142900Z	    "trip_end_date": null,
+2025-12-05T13:13:04.142895Z	    "trip_start_date": null,
+2025-12-05T13:13:04.142891Z	    "phone_number": null,
+2025-12-05T13:13:04.142886Z	    "email_address": "ava.chen@gmail.com",
+2025-12-05T13:13:04.142882Z	    "date_of_birth": "14-05-1934",
+2025-12-05T13:13:04.142876Z	    "client_last_name": "Chen",
+2025-12-05T13:13:04.142872Z	    "client_first_name": "Ava",
+2025-12-05T13:13:04.142867Z	  "travelerProfileForm": {
+2025-12-05T13:13:04.142863Z	  },
+2025-12-05T13:13:04.142858Z	    "document_limitations": " "
+2025-12-05T13:13:04.142853Z	    "safety_tools_usage": " ",
+2025-12-05T13:13:04.142849Z	    "payment_preference": " ",
+2025-12-05T13:13:04.142844Z	    "current_insurance_provider": " ",
+2025-12-05T13:13:04.142840Z	    "is_business_purpose": " ",
+2025-12-05T13:13:04.142836Z	    "winter_conditions_travel": " ",
+2025-12-05T13:13:04.142831Z	    "interested_in_insurance": " ",
+2025-12-05T13:13:04.142827Z	    "has_valid_passport": " ",
+2025-12-05T13:13:04.142822Z	    "is_primary_traveler": " ",
+2025-12-05T13:13:04.142817Z	    "has_loyalty_program": " ",
+2025-12-05T13:13:04.142813Z	    "has_booked_before": " ",
+2025-12-05T13:13:04.142809Z	    "planned_booking_date": " ",
+2025-12-05T13:13:04.142805Z	    "primary_stay_location": " ",
+2025-12-05T13:13:04.142800Z	    "preferred_departure_details": " ",
+2025-12-05T13:13:04.142795Z	    "trip_end_date": " ",
+2025-12-05T13:13:04.142790Z	    "trip_start_date": " ",
+2025-12-05T13:13:04.142785Z	    "phone_number": " ",
+2025-12-05T13:13:04.142781Z	    "email_address": "ava.chen@gmail.com",
+2025-12-05T13:13:04.142776Z	    "date_of_birth": "14-05-1934",
+2025-12-05T13:13:04.142771Z	    "client_last_name": "Chen",
+2025-12-05T13:13:04.142766Z	    "client_first_name": "Ava",
+2025-12-05T13:13:04.142761Z	  "agentDisplayMessage": {
+2025-12-05T13:13:04.142754Z	INFO:app:[APP] {
+2025-12-05T13:13:04.142650Z	INFO:app:[APP] --- Sending Response ---
+2025-12-05T13:13:04.142620Z	}
+2025-12-05T13:13:04.142616Z	  "email_address": "ava.chen@gmail.com"
+2025-12-05T13:13:04.142611Z	  "date_of_birth": "14-05-1934",
+2025-12-05T13:13:04.142607Z	  "client_last_name": "Chen",
+2025-12-05T13:13:04.142602Z	  "client_first_name": "Ava",
+2025-12-05T13:13:04.142591Z	INFO:app:[APP] {
+2025-12-05T13:13:04.142487Z	INFO:app:[APP] --- Received Request ---
+2025-12-05T13:13:04.134810Z	
+2025-12-05T13:11:50.444646Z	}
+2025-12-05T13:11:50.444643Z	  }
+2025-12-05T13:11:50.444639Z	    "document_limitations": null
+2025-12-05T13:11:50.444636Z	    "safety_tools_usage": null,
+2025-12-05T13:11:50.444633Z	    "payment_preference": null,
+2025-12-05T13:11:50.444630Z	    "current_insurance_provider": null,
+2025-12-05T13:11:50.444627Z	    "is_business_purpose": null,
+2025-12-05T13:11:50.444623Z	    "winter_conditions_travel": null,
+2025-12-05T13:11:50.444620Z	    "interested_in_insurance": null,
+2025-12-05T13:11:50.444617Z	    "has_valid_passport": null,
+2025-12-05T13:11:50.444614Z	    "is_primary_traveler": null,
+2025-12-05T13:11:50.444611Z	    "has_loyalty_program": null,
+2025-12-05T13:11:50.444608Z	    "has_booked_before": null,
+2025-12-05T13:11:50.444605Z	    "planned_booking_date": null,
+2025-12-05T13:11:50.444602Z	    "primary_stay_location": null,
+2025-12-05T13:11:50.444599Z	    "preferred_departure_details": null,
+2025-12-05T13:11:50.444596Z	    "trip_end_date": null,
+2025-12-05T13:11:50.444592Z	    "trip_start_date": null,
+2025-12-05T13:11:50.444589Z	    "phone_number": null,
+2025-12-05T13:11:50.444586Z	    "email_address": null,
+2025-12-05T13:11:50.444583Z	    "date_of_birth": null,
+2025-12-05T13:11:50.444579Z	    "client_last_name": "Chen",
+2025-12-05T13:11:50.444577Z	    "client_first_name": "Ava",
+2025-12-05T13:11:50.444572Z	  "travelerProfileForm": {
+2025-12-05T13:11:50.444569Z	  },
+2025-12-05T13:11:50.444566Z	    "document_limitations": " "
+2025-12-05T13:11:50.444563Z	    "safety_tools_usage": " ",
+2025-12-05T13:11:50.444560Z	    "payment_preference": " ",
+2025-12-05T13:11:50.444556Z	    "current_insurance_provider": " ",
+2025-12-05T13:11:50.444553Z	    "is_business_purpose": " ",
+2025-12-05T13:11:50.444549Z	    "winter_conditions_travel": " ",
+2025-12-05T13:11:50.444546Z	    "interested_in_insurance": " ",
+2025-12-05T13:11:50.444542Z	    "has_valid_passport": " ",
+2025-12-05T13:11:50.444539Z	    "is_primary_traveler": " ",
+2025-12-05T13:11:50.444536Z	    "has_loyalty_program": " ",
+2025-12-05T13:11:50.444533Z	    "has_booked_before": " ",
+2025-12-05T13:11:50.444529Z	    "planned_booking_date": " ",
+2025-12-05T13:11:50.444526Z	    "primary_stay_location": " ",
+2025-12-05T13:11:50.444523Z	    "preferred_departure_details": " ",
+2025-12-05T13:11:50.444520Z	    "trip_end_date": " ",
+2025-12-05T13:11:50.444517Z	    "trip_start_date": " ",
+2025-12-05T13:11:50.444514Z	    "phone_number": " ",
+2025-12-05T13:11:50.444510Z	    "email_address": " ",
+2025-12-05T13:11:50.444507Z	    "date_of_birth": " ",
+2025-12-05T13:11:50.444503Z	    "client_last_name": "Chen",
+2025-12-05T13:11:50.444500Z	    "client_first_name": "Ava",
+2025-12-05T13:11:50.444497Z	  "agentDisplayMessage": {
+2025-12-05T13:11:50.444493Z	INFO:app:[APP] {
+2025-12-05T13:11:50.444374Z	INFO:app:[APP] --- Sending Response ---
+2025-12-05T13:11:50.444329Z	}
+2025-12-05T13:11:50.444326Z	  "client_last_name": "Chen"
+2025-12-05T13:11:50.444323Z	  "client_first_name": "Ava",
+2025-12-05T13:11:50.444318Z	INFO:app:[APP] {
+2025-12-05T13:11:50.444204Z	INFO:app:[APP] --- Received Request ---
+2025-12-05T13:11:50.435130Z	
+2025-12-05T13:07:32.107023Z	}
+2025-12-05T13:07:32.107019Z	  }
+2025-12-05T13:07:32.107015Z	    "document_limitations": null
+2025-12-05T13:07:32.107011Z	    "safety_tools_usage": null,
+2025-12-05T13:07:32.107006Z	    "payment_preference": null,
+2025-12-05T13:07:32.106995Z	    "current_insurance_provider": null,
+2025-12-05T13:07:32.106991Z	    "is_business_purpose": null,
+2025-12-05T13:07:32.106987Z	    "winter_conditions_travel": null,
+2025-12-05T13:07:32.106983Z	    "interested_in_insurance": null,
+2025-12-05T13:07:32.106979Z	    "has_valid_passport": null,
+2025-12-05T13:07:32.106975Z	    "is_primary_traveler": null,
+2025-12-05T13:07:32.106967Z	    "has_loyalty_program": null,
+2025-12-05T13:07:32.106963Z	    "has_booked_before": null,
+2025-12-05T13:07:32.106959Z	    "planned_booking_date": null,
+2025-12-05T13:07:32.106955Z	    "primary_stay_location": null,
+2025-12-05T13:07:32.106951Z	    "preferred_departure_details": null,
+2025-12-05T13:07:32.106946Z	    "trip_end_date": null,
+2025-12-05T13:07:32.106942Z	    "trip_start_date": null,
+2025-12-05T13:07:32.106938Z	    "phone_number": null,
+2025-12-05T13:07:32.106933Z	    "email_address": null,
+2025-12-05T13:07:32.106928Z	    "date_of_birth": null,
+2025-12-05T13:07:32.106925Z	    "client_last_name": "miguens",
+2025-12-05T13:07:32.106921Z	    "client_first_name": "alberto",
+2025-12-05T13:07:32.106917Z	  "travelerProfileForm": {
+2025-12-05T13:07:32.106913Z	  },
+2025-12-05T13:07:32.106909Z	    "document_limitations": " "
+2025-12-05T13:07:32.106905Z	    "safety_tools_usage": " ",
+2025-12-05T13:07:32.106902Z	    "payment_preference": " ",
+2025-12-05T13:07:32.106897Z	    "current_insurance_provider": " ",
+2025-12-05T13:07:32.106893Z	    "is_business_purpose": " ",
+2025-12-05T13:07:32.106889Z	    "winter_conditions_travel": " ",
+2025-12-05T13:07:32.106886Z	    "interested_in_insurance": " ",
+2025-12-05T13:07:32.106882Z	    "has_valid_passport": " ",
+2025-12-05T13:07:32.106878Z	    "is_primary_traveler": " ",
+2025-12-05T13:07:32.106874Z	    "has_loyalty_program": " ",
+2025-12-05T13:07:32.106870Z	    "has_booked_before": " ",
+2025-12-05T13:07:32.106866Z	    "planned_booking_date": " ",
+2025-12-05T13:07:32.106862Z	    "primary_stay_location": " ",
+2025-12-05T13:07:32.106858Z	    "preferred_departure_details": " ",
+2025-12-05T13:07:32.106854Z	    "trip_end_date": " ",
+2025-12-05T13:07:32.106850Z	    "trip_start_date": " ",
+2025-12-05T13:07:32.106846Z	    "phone_number": " ",
+2025-12-05T13:07:32.106842Z	    "email_address": " ",
+2025-12-05T13:07:32.106839Z	    "date_of_birth": " ",
+2025-12-05T13:07:32.106834Z	    "client_last_name": "miguens",
+2025-12-05T13:07:32.106830Z	    "client_first_name": "alberto",
+2025-12-05T13:07:32.106826Z	  "agentDisplayMessage": {
+2025-12-05T13:07:32.106816Z	INFO:app:[APP] {
+2025-12-05T13:07:32.106469Z	INFO:app:[APP] --- Sending Response ---
+2025-12-05T13:07:32.106394Z	}
+2025-12-05T13:07:32.106389Z	  "client_last_name": "miguens"
+2025-12-05T13:07:32.106383Z	  "client_first_name": "alberto",
+2025-12-05T13:07:32.106376Z	INFO:app:[APP] {
+2025-12-05T13:07:32.106274Z	INFO:app:[APP] --- Received Request ---
+2025-12-05T13:07:32.097831Z	
+2025-12-05T13:05:19.463498Z	}
+2025-12-05T13:05:19.463494Z	  }
+2025-12-05T13:05:19.463490Z	    "document_limitations": null
+2025-12-05T13:05:19.463486Z	    "safety_tools_usage": null,
+2025-12-05T13:05:19.463481Z	    "payment_preference": null,
+2025-12-05T13:05:19.463477Z	    "current_insurance_provider": null,
+2025-12-05T13:05:19.463472Z	    "is_business_purpose": null,
+2025-12-05T13:05:19.463468Z	    "winter_conditions_travel": null,
+2025-12-05T13:05:19.463463Z	    "interested_in_insurance": null,
+2025-12-05T13:05:19.463459Z	    "has_valid_passport": null,
+2025-12-05T13:05:19.463455Z	    "is_primary_traveler": null,
+2025-12-05T13:05:19.463450Z	    "has_loyalty_program": null,
+2025-12-05T13:05:19.463446Z	    "has_booked_before": null,
+2025-12-05T13:05:19.463441Z	    "planned_booking_date": null,
+2025-12-05T13:05:19.463437Z	    "primary_stay_location": null,
+2025-12-05T13:05:19.463432Z	    "preferred_departure_details": null,
+2025-12-05T13:05:19.463427Z	    "trip_end_date": null,
+2025-12-05T13:05:19.463423Z	    "trip_start_date": null,
+2025-12-05T13:05:19.463419Z	    "phone_number": null,
+2025-12-05T13:05:19.463414Z	    "email_address": null,
+2025-12-05T13:05:19.463410Z	    "date_of_birth": null,
+2025-12-05T13:05:19.463405Z	    "client_last_name": null,
+2025-12-05T13:05:19.463401Z	    "client_first_name": "alberto",
+2025-12-05T13:05:19.463397Z	  "travelerProfileForm": {
+2025-12-05T13:05:19.463393Z	  },
+2025-12-05T13:05:19.463388Z	    "document_limitations": " "
+2025-12-05T13:05:19.463384Z	    "safety_tools_usage": " ",
+2025-12-05T13:05:19.463380Z	    "payment_preference": " ",
+2025-12-05T13:05:19.463376Z	    "current_insurance_provider": " ",
+2025-12-05T13:05:19.463372Z	    "is_business_purpose": " ",
+2025-12-05T13:05:19.463368Z	    "winter_conditions_travel": " ",
+2025-12-05T13:05:19.463364Z	    "interested_in_insurance": " ",
+2025-12-05T13:05:19.463360Z	    "has_valid_passport": " ",
+2025-12-05T13:05:19.463356Z	    "is_primary_traveler": " ",
+2025-12-05T13:05:19.463352Z	    "has_loyalty_program": " ",
+2025-12-05T13:05:19.463348Z	    "has_booked_before": " ",
+2025-12-05T13:05:19.463343Z	    "planned_booking_date": " ",
+2025-12-05T13:05:19.463339Z	    "primary_stay_location": " ",
+2025-12-05T13:05:19.463335Z	    "preferred_departure_details": " ",
+2025-12-05T13:05:19.463330Z	    "trip_end_date": " ",
+2025-12-05T13:05:19.463326Z	    "trip_start_date": " ",
+2025-12-05T13:05:19.463322Z	    "phone_number": " ",
+2025-12-05T13:05:19.463318Z	    "email_address": " ",
+2025-12-05T13:05:19.463314Z	    "date_of_birth": " ",
+2025-12-05T13:05:19.463310Z	    "client_last_name": " ",
+2025-12-05T13:05:19.463306Z	    "client_first_name": "alberto",
+2025-12-05T13:05:19.463301Z	  "agentDisplayMessage": {
+2025-12-05T13:05:19.463291Z	INFO:app:[APP] {
+2025-12-05T13:05:19.462738Z	INFO:app:[APP] --- Sending Response ---
+2025-12-05T13:05:19.462555Z	}
+2025-12-05T13:05:19.462550Z	  "client_first_name": "alberto"
+2025-12-05T13:05:19.462542Z	INFO:app:[APP] {
+2025-12-05T13:05:19.462354Z	INFO:app:[APP] --- Received Request ---
+2025-12-05T13:05:19.451184Z	
+2025-12-05T13:04:38.302959Z	}
+2025-12-05T13:04:38.302956Z	  }
+2025-12-05T13:04:38.302953Z	    "document_limitations": null
+2025-12-05T13:04:38.302950Z	    "safety_tools_usage": null,
+2025-12-05T13:04:38.302947Z	    "payment_preference": null,
+2025-12-05T13:04:38.302944Z	    "current_insurance_provider": null,
+2025-12-05T13:04:38.302941Z	    "is_business_purpose": null,
+2025-12-05T13:04:38.302937Z	    "winter_conditions_travel": null,
+2025-12-05T13:04:38.302934Z	    "interested_in_insurance": null,
+2025-12-05T13:04:38.302930Z	    "has_valid_passport": null,
+2025-12-05T13:04:38.302927Z	    "is_primary_traveler": null,
+2025-12-05T13:04:38.302924Z	    "has_loyalty_program": null,
+2025-12-05T13:04:38.302920Z	    "has_booked_before": null,
+2025-12-05T13:04:38.302916Z	    "planned_booking_date": null,
+2025-12-05T13:04:38.302913Z	    "primary_stay_location": null,
+2025-12-05T13:04:38.302909Z	    "preferred_departure_details": null,
+2025-12-05T13:04:38.302906Z	    "trip_end_date": null,
+2025-12-05T13:04:38.302902Z	    "trip_start_date": null,
+2025-12-05T13:04:38.302897Z	    "phone_number": null,
+2025-12-05T13:04:38.302893Z	    "email_address": null,
+2025-12-05T13:04:38.302890Z	    "date_of_birth": null,
+2025-12-05T13:04:38.302887Z	    "client_last_name": "Chen",
+2025-12-05T13:04:38.302883Z	    "client_first_name": "Ava",
+2025-12-05T13:04:38.302880Z	  "travelerProfileForm": {
+2025-12-05T13:04:38.302877Z	  },
+2025-12-05T13:04:38.302874Z	    "document_limitations": " "
+2025-12-05T13:04:38.302870Z	    "safety_tools_usage": " ",
+2025-12-05T13:04:38.302867Z	    "payment_preference": " ",
+2025-12-05T13:04:38.302864Z	    "current_insurance_provider": " ",
+2025-12-05T13:04:38.302857Z	    "is_business_purpose": " ",
+2025-12-05T13:04:38.302853Z	    "winter_conditions_travel": " ",
+2025-12-05T13:04:38.302849Z	    "interested_in_insurance": " ",
+2025-12-05T13:04:38.302845Z	    "has_valid_passport": " ",
+2025-12-05T13:04:38.302841Z	    "is_primary_traveler": " ",
+2025-12-05T13:04:38.302837Z	    "has_loyalty_program": " ",
+2025-12-05T13:04:38.302833Z	    "has_booked_before": " ",
+2025-12-05T13:04:38.302820Z	    "planned_booking_date": " ",
+2025-12-05T13:04:38.302816Z	    "primary_stay_location": " ",
+2025-12-05T13:04:38.302813Z	    "preferred_departure_details": " ",
+2025-12-05T13:04:38.302810Z	    "trip_end_date": " ",
+2025-12-05T13:04:38.302807Z	    "trip_start_date": " ",
+2025-12-05T13:04:38.302804Z	    "phone_number": " ",
+2025-12-05T13:04:38.302800Z	    "email_address": " ",
+2025-12-05T13:04:38.302797Z	    "date_of_birth": " ",
+2025-12-05T13:04:38.302793Z	    "client_last_name": "Chen",
+2025-12-05T13:04:38.302790Z	    "client_first_name": "Ava",
+2025-12-05T13:04:38.302787Z	  "agentDisplayMessage": {
+2025-12-05T13:04:38.302782Z	INFO:app:[APP] {
+2025-12-05T13:04:38.302669Z	INFO:app:[APP] --- Sending Response ---
+2025-12-05T13:04:38.302665Z	}
+2025-12-05T13:04:38.302660Z	  "client_last_name": "Chen"
+2025-12-05T13:04:38.302655Z	  "client_first_name": "Ava",
+2025-12-05T13:04:38.302644Z	INFO:app:[APP] {
+2025-12-05T13:04:38.302503Z	INFO:app:[APP] --- Received Request ---
+2025-12-05T13:04:37.519133Z	[2025-12-05 13:04:37 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T13:04:37.514645Z	Default STARTUP TCP probe succeeded after 1 attempt for container "traveler-profile-service-1" on port 8080.
+2025-12-05T13:04:37.505868Z	[2025-12-05 13:04:37 +0000] [1] [INFO] Using worker: sync
+2025-12-05T13:04:37.505801Z	[2025-12-05 13:04:37 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T13:04:37.503521Z	[2025-12-05 13:04:37 +0000] [1] [INFO] Starting gunicorn 23.0.0
+2025-12-05T13:04:36.588398Z	Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.
+2025-12-05T13:04:36.561727Z	
+2025-12-05T12:47:46.929447Z	[2025-12-05 12:47:46 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T12:47:46.828925Z	[2025-12-05 12:47:46 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T12:47:46.827821Z	[2025-12-05 12:47:46 +0000] [1] [INFO] Handling signal: term
+2025-12-05T12:32:38.576950Z	}
+2025-12-05T12:32:38.576947Z	  }
+2025-12-05T12:32:38.576944Z	    "document_limitations": null
+2025-12-05T12:32:38.576941Z	    "safety_tools_usage": null,
+2025-12-05T12:32:38.576938Z	    "payment_preference": null,
+2025-12-05T12:32:38.576935Z	    "current_insurance_provider": null,
+2025-12-05T12:32:38.576932Z	    "is_business_purpose": null,
+2025-12-05T12:32:38.576929Z	    "winter_conditions_travel": null,
+2025-12-05T12:32:38.576925Z	    "interested_in_insurance": null,
+2025-12-05T12:32:38.576922Z	    "has_valid_passport": null,
+2025-12-05T12:32:38.576919Z	    "is_primary_traveler": null,
+2025-12-05T12:32:38.576916Z	    "has_loyalty_program": null,
+2025-12-05T12:32:38.576913Z	    "has_booked_before": null,
+2025-12-05T12:32:38.576909Z	    "planned_booking_date": null,
+2025-12-05T12:32:38.576905Z	    "primary_stay_location": null,
+2025-12-05T12:32:38.576901Z	    "preferred_departure_details": null,
+2025-12-05T12:32:38.576897Z	    "trip_end_date": null,
+2025-12-05T12:32:38.576893Z	    "trip_start_date": null,
+2025-12-05T12:32:38.576890Z	    "phone_number": null,
+2025-12-05T12:32:38.576887Z	    "email_address": "beto.miguens@gmail.com",
+2025-12-05T12:32:38.576884Z	    "date_of_birth": null,
+2025-12-05T12:32:38.576880Z	    "client_last_name": "Miguens",
+2025-12-05T12:32:38.576875Z	    "client_first_name": "Beto",
+2025-12-05T12:32:38.576872Z	  "travelerProfileForm": {
+2025-12-05T12:32:38.576869Z	  },
+2025-12-05T12:32:38.576867Z	    "document_limitations": " "
+2025-12-05T12:32:38.576864Z	    "safety_tools_usage": " ",
+2025-12-05T12:32:38.576861Z	    "payment_preference": " ",
+2025-12-05T12:32:38.576858Z	    "current_insurance_provider": " ",
+2025-12-05T12:32:38.576854Z	    "is_business_purpose": " ",
+2025-12-05T12:32:38.576851Z	    "winter_conditions_travel": " ",
+2025-12-05T12:32:38.576848Z	    "interested_in_insurance": " ",
+2025-12-05T12:32:38.576845Z	    "has_valid_passport": " ",
+2025-12-05T12:32:38.576842Z	    "is_primary_traveler": " ",
+2025-12-05T12:32:38.576839Z	    "has_loyalty_program": " ",
+2025-12-05T12:32:38.576836Z	    "has_booked_before": " ",
+2025-12-05T12:32:38.576833Z	    "planned_booking_date": " ",
+2025-12-05T12:32:38.576830Z	    "primary_stay_location": " ",
+2025-12-05T12:32:38.576827Z	    "preferred_departure_details": " ",
+2025-12-05T12:32:38.576823Z	    "trip_end_date": " ",
+2025-12-05T12:32:38.576820Z	    "trip_start_date": " ",
+2025-12-05T12:32:38.576817Z	    "phone_number": " ",
+2025-12-05T12:32:38.576813Z	    "email_address": "beto.miguens@gmail.com",
+2025-12-05T12:32:38.576810Z	    "date_of_birth": " ",
+2025-12-05T12:32:38.576807Z	    "client_last_name": "Miguens",
+2025-12-05T12:32:38.576803Z	    "client_first_name": "Beto",
+2025-12-05T12:32:38.576799Z	  "agentDisplayMessage": {
+2025-12-05T12:32:38.576794Z	INFO:app:[APP] {
+2025-12-05T12:32:38.576577Z	INFO:app:[APP] --- Sending Response ---
+2025-12-05T12:32:38.576544Z	}
+2025-12-05T12:32:38.576541Z	  "email_address": "beto.miguens@gmail.com"
+2025-12-05T12:32:38.576538Z	  "client_last_name": "Miguens",
+2025-12-05T12:32:38.576523Z	  "client_first_name": "Beto",
+2025-12-05T12:32:38.576517Z	INFO:app:[APP] {
+2025-12-05T12:32:38.576398Z	INFO:app:[APP] --- Received Request ---
+2025-12-05T12:32:38.566523Z	
+2025-12-05T12:28:37.218731Z	[2025-12-05 12:28:37 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T12:28:37.118581Z	[2025-12-05 12:28:37 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T12:28:37.117376Z	[2025-12-05 12:28:37 +0000] [1] [INFO] Handling signal: term
+2025-12-05T12:26:59.474497Z	}
+2025-12-05T12:26:59.474494Z	  }
+2025-12-05T12:26:59.474491Z	    "document_limitations": null
+2025-12-05T12:26:59.474488Z	    "safety_tools_usage": null,
+2025-12-05T12:26:59.474485Z	    "payment_preference": null,
+2025-12-05T12:26:59.474482Z	    "current_insurance_provider": null,
+2025-12-05T12:26:59.474479Z	    "is_business_purpose": null,
+2025-12-05T12:26:59.474476Z	    "winter_conditions_travel": null,
+2025-12-05T12:26:59.474473Z	    "interested_in_insurance": null,
+2025-12-05T12:26:59.474470Z	    "has_valid_passport": null,
+2025-12-05T12:26:59.474467Z	    "is_primary_traveler": null,
+2025-12-05T12:26:59.474464Z	    "has_loyalty_program": null,
+2025-12-05T12:26:59.474460Z	    "has_booked_before": null,
+2025-12-05T12:26:59.474457Z	    "planned_booking_date": null,
+2025-12-05T12:26:59.474454Z	    "primary_stay_location": null,
+2025-12-05T12:26:59.474451Z	    "preferred_departure_details": null,
+2025-12-05T12:26:59.474448Z	    "trip_end_date": null,
+2025-12-05T12:26:59.474445Z	    "trip_start_date": null,
+2025-12-05T12:26:59.474442Z	    "phone_number": null,
+2025-12-05T12:26:59.474439Z	    "email_address": null,
+2025-12-05T12:26:59.474436Z	    "date_of_birth": null,
+2025-12-05T12:26:59.474433Z	    "client_last_name": null,
+2025-12-05T12:26:59.474430Z	    "client_first_name": "alberto",
+2025-12-05T12:26:59.474427Z	  "travelerProfileForm": {
+2025-12-05T12:26:59.474424Z	  },
+2025-12-05T12:26:59.474421Z	    "document_limitations": " "
+2025-12-05T12:26:59.474418Z	    "safety_tools_usage": " ",
+2025-12-05T12:26:59.474415Z	    "payment_preference": " ",
+2025-12-05T12:26:59.474412Z	    "current_insurance_provider": " ",
+2025-12-05T12:26:59.474409Z	    "is_business_purpose": " ",
+2025-12-05T12:26:59.474405Z	    "winter_conditions_travel": " ",
+2025-12-05T12:26:59.474402Z	    "interested_in_insurance": " ",
+2025-12-05T12:26:59.474399Z	    "has_valid_passport": " ",
+2025-12-05T12:26:59.474396Z	    "is_primary_traveler": " ",
+2025-12-05T12:26:59.474393Z	    "has_loyalty_program": " ",
+2025-12-05T12:26:59.474389Z	    "has_booked_before": " ",
+2025-12-05T12:26:59.474386Z	    "planned_booking_date": " ",
+2025-12-05T12:26:59.474383Z	    "primary_stay_location": " ",
+2025-12-05T12:26:59.474380Z	    "preferred_departure_details": " ",
+2025-12-05T12:26:59.474377Z	    "trip_end_date": " ",
+2025-12-05T12:26:59.474374Z	    "trip_start_date": " ",
+2025-12-05T12:26:59.474371Z	    "phone_number": " ",
+2025-12-05T12:26:59.474368Z	    "email_address": " ",
+2025-12-05T12:26:59.474364Z	    "date_of_birth": " ",
+2025-12-05T12:26:59.474361Z	    "client_last_name": " ",
+2025-12-05T12:26:59.474357Z	    "client_first_name": "alberto",
+2025-12-05T12:26:59.474354Z	  "agentDisplayMessage": {
+2025-12-05T12:26:59.474351Z	INFO:app:[APP] {
+2025-12-05T12:26:59.474205Z	INFO:app:[APP] --- Sending Response ---
+2025-12-05T12:26:59.474093Z	}
+2025-12-05T12:26:59.474089Z	  "client_first_name": "alberto"
+2025-12-05T12:26:59.474085Z	INFO:app:[APP] {
+2025-12-05T12:26:59.473964Z	INFO:app:[APP] --- Received Request ---
+2025-12-05T12:26:59.458946Z	
+2025-12-05T12:26:04.807408Z	
+2025-12-05T12:26:03.489098Z	
+2025-12-05T12:26:03.420211Z	Default STARTUP TCP probe succeeded after 1 attempt for container "traveler-profile-service-1" on port 8080.
+2025-12-05T12:26:03.420050Z	[2025-12-05 12:26:03 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T12:26:03.405767Z	[2025-12-05 12:26:03 +0000] [1] [INFO] Using worker: sync
+2025-12-05T12:26:03.405707Z	[2025-12-05 12:26:03 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T12:26:03.403774Z	[2025-12-05 12:26:03 +0000] [1] [INFO] Starting gunicorn 23.0.0
+2025-12-05T12:26:02.579277Z	Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.
+2025-12-05T12:25:57.152116Z	
+2025-12-05T12:23:30.811135Z	
+2025-12-05T12:23:29.478681Z	
+2025-12-05T12:23:29.420557Z	[2025-12-05 12:23:29 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T12:23:29.413330Z	Default STARTUP TCP probe succeeded after 1 attempt for container "traveler-profile-service-1" on port 8080.
+2025-12-05T12:23:29.406820Z	[2025-12-05 12:23:29 +0000] [1] [INFO] Using worker: sync
+2025-12-05T12:23:29.406766Z	[2025-12-05 12:23:29 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T12:23:29.404854Z	[2025-12-05 12:23:29 +0000] [1] [INFO] Starting gunicorn 23.0.0
+2025-12-05T12:23:28.623104Z	Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.
+2025-12-05T12:23:22.563861Z	
+2025-12-04T18:13:28.268188Z	[2025-12-04 18:13:28 +0000] [1] [INFO] Shutting down: Master
+2025-12-04T18:13:28.168146Z	[2025-12-04 18:13:28 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T18:13:28.167001Z	[2025-12-04 18:13:28 +0000] [1] [INFO] Handling signal: term
+2025-12-04T17:58:19.691211Z	
+2025-12-04T17:58:18.732497Z	[2025-12-04 17:58:18 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T17:58:18.724897Z	Default STARTUP TCP probe succeeded after 1 attempt for container "traveler-profile-service-1" on port 8080.
+2025-12-04T17:58:18.709232Z	[2025-12-04 17:58:18 +0000] [1] [INFO] Using worker: sync
+2025-12-04T17:58:18.709170Z	[2025-12-04 17:58:18 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T17:58:18.706636Z	[2025-12-04 17:58:18 +0000] [1] [INFO] Starting gunicorn 23.0.0
+2025-12-04T17:58:17.842134Z	Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.
+2025-12-04T17:58:17.817578Z	
+2025-12-04T16:37:48.250722Z	[2025-12-04 16:37:48 +0000] [1] [INFO] Shutting down: Master
+2025-12-04T16:37:48.150527Z	[2025-12-04 16:37:48 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T16:37:48.149206Z	[2025-12-04 16:37:48 +0000] [1] [INFO] Handling signal: term
+2025-12-04T16:22:43.488044Z	}
+2025-12-04T16:22:43.488039Z	  }
+2025-12-04T16:22:43.488030Z	    "document_limitations": " "
+2025-12-04T16:22:43.488026Z	    "safety_tools_usage": " ",
+2025-12-04T16:22:43.488022Z	    "payment_preference": " ",
+2025-12-04T16:22:43.488018Z	    "current_insurance_provider": " ",
+2025-12-04T16:22:43.488014Z	    "is_business_purpose": " ",
+2025-12-04T16:22:43.488009Z	    "winter_conditions_travel": " ",
+2025-12-04T16:22:43.487847Z	    "interested_in_insurance": " ",
+2025-12-04T16:22:43.487843Z	    "has_valid_passport": " ",
+2025-12-04T16:22:43.487839Z	    "is_primary_traveler": " ",
+2025-12-04T16:22:43.487835Z	    "has_loyalty_program": " ",
+2025-12-04T16:22:43.487832Z	    "has_booked_before": " ",
+2025-12-04T16:22:43.487829Z	    "planned_booking_date": " ",
+2025-12-04T16:22:43.487826Z	    "primary_stay_location": " ",
+2025-12-04T16:22:43.487823Z	    "preferred_departure_details": " ",
+2025-12-04T16:22:43.487820Z	    "trip_end_date": "03-05-2026",
+2025-12-04T16:22:43.487817Z	    "trip_start_date": "02-02-2026",
+2025-12-04T16:22:43.487814Z	    "phone_number": "19239949485",
+2025-12-04T16:22:43.487811Z	    "email_address": "alberto.miguens@google.com",
+2025-12-04T16:22:43.487808Z	    "date_of_birth": "14-05-1990",
+2025-12-04T16:22:43.487805Z	    "client_last_name": "Miguens",
+2025-12-04T16:22:43.487802Z	    "client_first_name": "Alberto",
+2025-12-04T16:22:43.487784Z	  "agentDisplayMessage": {
+2025-12-04T16:22:43.487779Z	INFO:app:[APP] {
+2025-12-04T16:22:43.487703Z	INFO:app:[APP] --- Sending Response ---
+2025-12-04T16:22:43.487666Z	}
+2025-12-04T16:22:43.487661Z	  "trip_start_date": "02-02-2026"
+2025-12-04T16:22:43.487657Z	  "trip_end_date": "03-05-2026",
+2025-12-04T16:22:43.487652Z	  "phone_number": "19239949485",
+2025-12-04T16:22:43.487648Z	  "email_address": "alberto.miguens@google.com",
+2025-12-04T16:22:43.487642Z	  "date_of_birth": "14-05-1990",
+2025-12-04T16:22:43.487638Z	  "client_last_name": "Miguens",
+2025-12-04T16:22:43.487634Z	  "client_first_name": "Alberto",
+2025-12-04T16:22:43.487628Z	INFO:app:[APP] {
+2025-12-04T16:22:43.487535Z	INFO:app:[APP] --- Received Request ---
+2025-12-04T16:22:43.478970Z	
+2025-12-04T16:21:25.345990Z	}
+2025-12-04T16:21:25.345986Z	  }
+2025-12-04T16:21:25.345983Z	    "document_limitations": " "
+2025-12-04T16:21:25.345980Z	    "safety_tools_usage": " ",
+2025-12-04T16:21:25.345977Z	    "payment_preference": " ",
+2025-12-04T16:21:25.345974Z	    "current_insurance_provider": " ",
+2025-12-04T16:21:25.345972Z	    "is_business_purpose": " ",
+2025-12-04T16:21:25.345969Z	    "winter_conditions_travel": " ",
+2025-12-04T16:21:25.345966Z	    "interested_in_insurance": " ",
+2025-12-04T16:21:25.345963Z	    "has_valid_passport": " ",
+2025-12-04T16:21:25.345951Z	    "is_primary_traveler": " ",
+2025-12-04T16:21:25.345948Z	    "has_loyalty_program": " ",
+2025-12-04T16:21:25.345945Z	    "has_booked_before": " ",
+2025-12-04T16:21:25.345942Z	    "planned_booking_date": " ",
+2025-12-04T16:21:25.345940Z	    "primary_stay_location": " ",
+2025-12-04T16:21:25.345937Z	    "preferred_departure_details": " ",
+2025-12-04T16:21:25.345934Z	    "trip_end_date": " ",
+2025-12-04T16:21:25.345931Z	    "trip_start_date": " ",
+2025-12-04T16:21:25.345928Z	    "phone_number": "19239949485",
+2025-12-04T16:21:25.345925Z	    "email_address": "alberto.miguens@google.com",
+2025-12-04T16:21:25.345922Z	    "date_of_birth": "14-05-1990",
+2025-12-04T16:21:25.345919Z	    "client_last_name": "Miguens",
+2025-12-04T16:21:25.345916Z	    "client_first_name": "Alberto",
+2025-12-04T16:21:25.345912Z	  "agentDisplayMessage": {
+2025-12-04T16:21:25.345907Z	INFO:app:[APP] {
+2025-12-04T16:21:25.345663Z	INFO:app:[APP] --- Sending Response ---
+2025-12-04T16:21:25.345638Z	}
+2025-12-04T16:21:25.345635Z	  "phone_number": "19239949485"
+2025-12-04T16:21:25.345631Z	  "email_address": "alberto.miguens@google.com",
+2025-12-04T16:21:25.345629Z	  "date_of_birth": "14-05-1990",
+2025-12-04T16:21:25.345625Z	  "client_last_name": "Miguens",
+2025-12-04T16:21:25.345622Z	  "client_first_name": "Alberto",
+2025-12-04T16:21:25.345615Z	INFO:app:[APP] {
+2025-12-04T16:21:25.345496Z	INFO:app:[APP] --- Received Request ---
+2025-12-04T16:21:25.337274Z	
+2025-12-04T16:16:42.583262Z	}
+2025-12-04T16:16:42.583259Z	  }
+2025-12-04T16:16:42.583254Z	    "document_limitations": " "
+2025-12-04T16:16:42.583252Z	    "safety_tools_usage": " ",
+2025-12-04T16:16:42.583249Z	    "payment_preference": " ",
+2025-12-04T16:16:42.583245Z	    "current_insurance_provider": " ",
+2025-12-04T16:16:42.583242Z	    "is_business_purpose": " ",
+2025-12-04T16:16:42.583239Z	    "winter_conditions_travel": " ",
+2025-12-04T16:16:42.583236Z	    "interested_in_insurance": " ",
+2025-12-04T16:16:42.583233Z	    "has_valid_passport": " ",
+2025-12-04T16:16:42.583230Z	    "is_primary_traveler": " ",
+2025-12-04T16:16:42.583223Z	    "has_loyalty_program": " ",
+2025-12-04T16:16:42.583219Z	    "has_booked_before": " ",
+2025-12-04T16:16:42.583216Z	    "planned_booking_date": " ",
+2025-12-04T16:16:42.583212Z	    "primary_stay_location": " ",
+2025-12-04T16:16:42.583209Z	    "preferred_departure_details": " ",
+2025-12-04T16:16:42.583206Z	    "trip_end_date": " ",
+2025-12-04T16:16:42.583202Z	    "trip_start_date": " ",
+2025-12-04T16:16:42.583199Z	    "phone_number": " ",
+2025-12-04T16:16:42.583195Z	    "email_address": "alberto.miguens@gmail.com",
+2025-12-04T16:16:42.583192Z	    "date_of_birth": " ",
+2025-12-04T16:16:42.583189Z	    "client_last_name": "Miguens",
+2025-12-04T16:16:42.583186Z	    "client_first_name": "Alberto",
+2025-12-04T16:16:42.583183Z	  "agentDisplayMessage": {
+2025-12-04T16:16:42.583177Z	INFO:app:[APP] {
+2025-12-04T16:16:42.583030Z	INFO:app:[APP] --- Sending Response ---
+2025-12-04T16:16:42.582966Z	}
+2025-12-04T16:16:42.582962Z	  "email_address": "alberto.miguens@gmail.com"
+2025-12-04T16:16:42.582959Z	  "client_last_name": "Miguens",
+2025-12-04T16:16:42.582956Z	  "client_first_name": "Alberto",
+2025-12-04T16:16:42.582951Z	INFO:app:[APP] {
+2025-12-04T16:16:42.582852Z	INFO:app:[APP] --- Received Request ---
+2025-12-04T16:16:42.578864Z	
+2025-12-04T16:16:12.023719Z	}
+2025-12-04T16:16:12.023716Z	  }
+2025-12-04T16:16:12.023713Z	    "document_limitations": " "
+2025-12-04T16:16:12.023710Z	    "safety_tools_usage": " ",
+2025-12-04T16:16:12.023708Z	    "payment_preference": " ",
+2025-12-04T16:16:12.023704Z	    "current_insurance_provider": " ",
+2025-12-04T16:16:12.023700Z	    "is_business_purpose": " ",
+2025-12-04T16:16:12.023697Z	    "winter_conditions_travel": " ",
+2025-12-04T16:16:12.023693Z	    "interested_in_insurance": " ",
+2025-12-04T16:16:12.023690Z	    "has_valid_passport": " ",
+2025-12-04T16:16:12.023686Z	    "is_primary_traveler": " ",
+2025-12-04T16:16:12.023683Z	    "has_loyalty_program": " ",
+2025-12-04T16:16:12.023681Z	    "has_booked_before": " ",
+2025-12-04T16:16:12.023677Z	    "planned_booking_date": " ",
+2025-12-04T16:16:12.023674Z	    "primary_stay_location": " ",
+2025-12-04T16:16:12.023670Z	    "preferred_departure_details": " ",
+2025-12-04T16:16:12.023667Z	    "trip_end_date": " ",
+2025-12-04T16:16:12.023664Z	    "trip_start_date": " ",
+2025-12-04T16:16:12.023661Z	    "phone_number": " ",
+2025-12-04T16:16:12.023658Z	    "email_address": " ",
+2025-12-04T16:16:12.023656Z	    "date_of_birth": " ",
+2025-12-04T16:16:12.023652Z	    "client_last_name": "Miguens",
+2025-12-04T16:16:12.023649Z	    "client_first_name": "Alberto",
+2025-12-04T16:16:12.023645Z	  "agentDisplayMessage": {
+2025-12-04T16:16:12.023641Z	INFO:app:[APP] {
+2025-12-04T16:16:12.023546Z	INFO:app:[APP] --- Sending Response ---
+2025-12-04T16:16:12.023498Z	}
+2025-12-04T16:16:12.023495Z	  "client_last_name": "Miguens"
+2025-12-04T16:16:12.023492Z	  "client_first_name": "Alberto",
+2025-12-04T16:16:12.023488Z	INFO:app:[APP] {
+2025-12-04T16:16:12.023398Z	INFO:app:[APP] --- Received Request ---
+2025-12-04T16:16:11.149996Z	[2025-12-04 16:16:11 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T16:16:11.138560Z	Default STARTUP TCP probe succeeded after 1 attempt for container "traveler-profile-service-1" on port 8080.
+2025-12-04T16:16:11.118339Z	[2025-12-04 16:16:11 +0000] [1] [INFO] Using worker: sync
+2025-12-04T16:16:11.118038Z	[2025-12-04 16:16:11 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T16:16:11.115551Z	[2025-12-04 16:16:11 +0000] [1] [INFO] Starting gunicorn 23.0.0
+2025-12-04T16:16:10.048559Z	Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.
+2025-12-04T16:16:10.030889Z	
+2025-12-04T15:58:28.237369Z	[2025-12-04 15:58:28 +0000] [1] [INFO] Shutting down: Master
+2025-12-04T15:58:28.137241Z	[2025-12-04 15:58:28 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T15:58:28.136374Z	[2025-12-04 15:58:28 +0000] [1] [INFO] Handling signal: term
+2025-12-04T15:57:42.436046Z	[2025-12-04 15:57:42 +0000] [1] [INFO] Shutting down: Master
+2025-12-04T15:57:42.336428Z	[2025-12-04 15:57:42 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T15:57:42.334948Z	[2025-12-04 15:57:42 +0000] [1] [INFO] Handling signal: term
+2025-12-04T15:45:50.560626Z	}
+2025-12-04T15:45:50.560623Z	  }
+2025-12-04T15:45:50.560620Z	    "document_limitations": " "
+2025-12-04T15:45:50.560617Z	    "safety_tools_usage": " ",
+2025-12-04T15:45:50.560614Z	    "payment_preference": " ",
+2025-12-04T15:45:50.560610Z	    "current_insurance_provider": " ",
+2025-12-04T15:45:50.560607Z	    "is_business_purpose": " ",
+2025-12-04T15:45:50.560604Z	    "winter_conditions_travel": " ",
+2025-12-04T15:45:50.560601Z	    "interested_in_insurance": " ",
+2025-12-04T15:45:50.560598Z	    "has_valid_passport": " ",
+2025-12-04T15:45:50.560595Z	    "is_primary_traveler": " ",
+2025-12-04T15:45:50.560592Z	    "has_loyalty_program": " ",
+2025-12-04T15:45:50.560589Z	    "has_booked_before": " ",
+2025-12-04T15:45:50.560585Z	    "planned_booking_date": " ",
+2025-12-04T15:45:50.560582Z	    "primary_stay_location": " ",
+2025-12-04T15:45:50.560579Z	    "preferred_departure_details": " ",
+2025-12-04T15:45:50.560576Z	    "trip_end_date": " ",
+2025-12-04T15:45:50.560573Z	    "trip_start_date": " ",
+2025-12-04T15:45:50.560570Z	    "phone_number": " ",
+2025-12-04T15:45:50.560568Z	    "email_address": " ",
+2025-12-04T15:45:50.560565Z	    "date_of_birth": " ",
+2025-12-04T15:45:50.560562Z	    "client_last_name": " ",
+2025-12-04T15:45:50.560558Z	    "client_first_name": "alberto",
+2025-12-04T15:45:50.560555Z	  "agentDisplayMessage": {
+2025-12-04T15:45:50.560550Z	INFO:app:[APP] {
+2025-12-04T15:45:50.560418Z	INFO:app:[APP] --- Sending Response ---
+2025-12-04T15:45:50.560336Z	}
+2025-12-04T15:45:50.560333Z	  "client_first_name": "alberto"
+2025-12-04T15:45:50.560326Z	INFO:app:[APP] {
+2025-12-04T15:45:50.560087Z	INFO:app:[APP] --- Received Request ---
+2025-12-04T15:45:50.544082Z	
+2025-12-04T15:45:48.598173Z	[2025-12-04 15:45:48 +0000] [1] [INFO] Shutting down: Master
+2025-12-04T15:45:48.498208Z	[2025-12-04 15:45:48 +0000] [9] [INFO] Worker exiting (pid: 9)
+2025-12-04T15:45:48.497490Z	[2025-12-04 15:45:48 +0000] [1] [INFO] Handling signal: term
+2025-12-04T15:43:26.732977Z	Default STARTUP TCP probe succeeded after 1 attempt for container "traveler-profile-service-1" on port 8080.
+2025-12-04T15:43:26.727769Z	[2025-12-04 15:43:26 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T15:43:26.712777Z	[2025-12-04 15:43:26 +0000] [1] [INFO] Using worker: sync
+2025-12-04T15:43:26.712533Z	[2025-12-04 15:43:26 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T15:43:26.710003Z	[2025-12-04 15:43:26 +0000] [1] [INFO] Starting gunicorn 23.0.0
+2025-12-04T15:43:26.064723Z	
+2025-12-04T15:43:25.956758Z	Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.
+2025-12-04T15:43:24.786022Z	
+2025-12-04T15:43:24.742167Z	[2025-12-04 15:43:24 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T15:43:24.713975Z	Default STARTUP TCP probe succeeded after 1 attempt for container "traveler-profile-service-1" on port 8080.
+2025-12-04T15:43:24.713806Z	[2025-12-04 15:43:24 +0000] [1] [INFO] Using worker: sync
+2025-12-04T15:43:24.713627Z	[2025-12-04 15:43:24 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T15:43:24.708583Z	[2025-12-04 15:43:24 +0000] [1] [INFO] Starting gunicorn 23.0.0
+2025-12-04T15:43:23.934866Z	Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.
+2025-12-04T15:43:18.907383Z	
+2025-12-04T15:40:43.403342Z	}
+2025-12-04T15:40:43.403340Z	  }
+2025-12-04T15:40:43.403338Z	    "document_limitations": null
+2025-12-04T15:40:43.403336Z	    "safety_tools_usage": null,
+2025-12-04T15:40:43.403334Z	    "payment_preference": null,
+2025-12-04T15:40:43.403332Z	    "current_insurance_provider": null,
+2025-12-04T15:40:43.403330Z	    "is_business_purpose": null,
+2025-12-04T15:40:43.403328Z	    "winter_conditions_travel": null,
+2025-12-04T15:40:43.403326Z	    "interested_in_insurance": null,
+2025-12-04T15:40:43.403324Z	    "has_valid_passport": null,
+2025-12-04T15:40:43.403322Z	    "is_primary_traveler": null,
+2025-12-04T15:40:43.403319Z	    "has_loyalty_program": null,
+2025-12-04T15:40:43.403316Z	    "has_booked_before": null,
+2025-12-04T15:40:43.403312Z	    "planned_booking_date": null,
+2025-12-04T15:40:43.403310Z	    "primary_stay_location": null,
+2025-12-04T15:40:43.403308Z	    "preferred_departure_details": null,
+2025-12-04T15:40:43.403306Z	    "trip_end_date": null,
+2025-12-04T15:40:43.403304Z	    "trip_start_date": null,
+2025-12-04T15:40:43.403302Z	    "phone_number": null,
+2025-12-04T15:40:43.403299Z	    "email_address": null,
+2025-12-04T15:40:43.403297Z	    "date_of_birth": null,
+2025-12-04T15:40:43.403295Z	    "client_last_name": null,
+2025-12-04T15:40:43.403293Z	    "client_first_name": "alberto",
+2025-12-04T15:40:43.403289Z	  "agentDisplayMessage": {
+2025-12-04T15:40:43.403284Z	INFO:app:[APP] {
+2025-12-04T15:40:43.403254Z	INFO:app:[APP] --- Sending Response ---
+2025-12-04T15:40:43.403250Z	}
+2025-12-04T15:40:43.403247Z	  "client_first_name": "alberto"
+2025-12-04T15:40:43.403243Z	INFO:app:[APP] {
+2025-12-04T15:40:43.403221Z	INFO:app:[APP] --- Received Request ---
+2025-12-04T15:40:43.395058Z	
+2025-12-04T15:39:12.879621Z	}
+2025-12-04T15:39:12.879619Z	  }
+2025-12-04T15:39:12.879607Z	    "document_limitations": null
+2025-12-04T15:39:12.879605Z	    "safety_tools_usage": null,
+2025-12-04T15:39:12.879603Z	    "payment_preference": null,
+2025-12-04T15:39:12.879600Z	    "current_insurance_provider": null,
+2025-12-04T15:39:12.879597Z	    "is_business_purpose": null,
+2025-12-04T15:39:12.879595Z	    "winter_conditions_travel": null,
+2025-12-04T15:39:12.879592Z	    "interested_in_insurance": null,
+2025-12-04T15:39:12.879590Z	    "has_valid_passport": null,
+2025-12-04T15:39:12.879587Z	    "is_primary_traveler": null,
+2025-12-04T15:39:12.879585Z	    "has_loyalty_program": null,
+2025-12-04T15:39:12.879582Z	    "has_booked_before": null,
+2025-12-04T15:39:12.879580Z	    "planned_booking_date": null,
+2025-12-04T15:39:12.879577Z	    "primary_stay_location": null,
+2025-12-04T15:39:12.879575Z	    "preferred_departure_details": null,
+2025-12-04T15:39:12.879572Z	    "trip_end_date": null,
+2025-12-04T15:39:12.879569Z	    "trip_start_date": null,
+2025-12-04T15:39:12.879567Z	    "phone_number": null,
+2025-12-04T15:39:12.879565Z	    "email_address": null,
+2025-12-04T15:39:12.879563Z	    "date_of_birth": null,
+2025-12-04T15:39:12.879561Z	    "client_last_name": null,
+2025-12-04T15:39:12.879559Z	    "client_first_name": null,
+2025-12-04T15:39:12.879556Z	  "agentDisplayMessage": {
+2025-12-04T15:39:12.879553Z	INFO:app:[APP] {
+2025-12-04T15:39:12.879532Z	INFO:app:[APP] --- Sending Response ---
+2025-12-04T15:39:12.879530Z	INFO:app:[APP] {}
+2025-12-04T15:39:12.879514Z	INFO:app:[APP] --- Received Request ---
+2025-12-04T15:39:12.866224Z	
+2025-12-04T15:38:25.279682Z	
+2025-12-04T15:28:40.819359Z	}
+2025-12-04T15:28:40.819357Z	  }
+2025-12-04T15:28:40.819353Z	    "document_limitations": null
+2025-12-04T15:28:40.819351Z	    "safety_tools_usage": null,
+2025-12-04T15:28:40.819348Z	    "payment_preference": null,
+2025-12-04T15:28:40.819345Z	    "current_insurance_provider": null,
+2025-12-04T15:28:40.819343Z	    "is_business_purpose": null,
+2025-12-04T15:28:40.819340Z	    "winter_conditions_travel": null,
+2025-12-04T15:28:40.819337Z	    "interested_in_insurance": null,
+2025-12-04T15:28:40.819335Z	    "has_valid_passport": null,
+2025-12-04T15:28:40.819332Z	    "is_primary_traveler": null,
+2025-12-04T15:28:40.819329Z	    "has_loyalty_program": null,
+2025-12-04T15:28:40.819327Z	    "has_booked_before": null,
+2025-12-04T15:28:40.819324Z	    "planned_booking_date": null,
+2025-12-04T15:28:40.819321Z	    "primary_stay_location": null,
+2025-12-04T15:28:40.819319Z	    "preferred_departure_details": null,
+2025-12-04T15:28:40.819315Z	    "trip_end_date": null,
+2025-12-04T15:28:40.819313Z	    "trip_start_date": null,
+2025-12-04T15:28:40.819310Z	    "phone_number": null,
+2025-12-04T15:28:40.819307Z	    "email_address": null,
+2025-12-04T15:28:40.819305Z	    "date_of_birth": null,
+2025-12-04T15:28:40.819302Z	    "client_last_name": "Miguens",
+2025-12-04T15:28:40.819300Z	    "client_first_name": "Alberto",
+2025-12-04T15:28:40.819297Z	  "agentDisplayMessage": {
+2025-12-04T15:28:40.819295Z	INFO:app:[APP] {
+2025-12-04T15:28:40.819292Z	INFO:app:[APP] --- Sending Response ---
+2025-12-04T15:28:40.819289Z	}
+2025-12-04T15:28:40.819286Z	  "client_last_name": "Miguens"
+2025-12-04T15:28:40.819283Z	  "client_first_name": "Alberto",
+2025-12-04T15:28:40.819279Z	INFO:app:[APP] {
+2025-12-04T15:28:40.819119Z	INFO:app:[APP] --- Received Request ---
+2025-12-04T15:28:39.651760Z	[2025-12-04 15:28:39 +0000] [9] [INFO] Booting worker with pid: 9
+2025-12-04T15:28:39.647025Z	Default STARTUP TCP probe succeeded after 1 attempt for container "traveler-profile-service-1" on port 8080.
+2025-12-04T15:28:39.646671Z	[2025-12-04 15:28:39 +0000] [1] [INFO] Using worker: sync
+2025-12-04T15:28:39.646668Z	[2025-12-04 15:28:39 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T15:28:39.646640Z	[2025-12-04 15:28:39 +0000] [1] [INFO] Starting gunicorn 23.0.0
+2025-12-04T15:28:38.576077Z	Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.
+2025-12-04T15:28:38.544446Z	

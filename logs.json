@@ -1,0 +1,3782 @@
+[
+  {
+    "insertId": "kamy6qe3javo",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.ReplaceService",
+      "resourceName": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Service",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "542.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/operation-id": "5fd86259-2329-49fe-b12b-1b2c1945eb5f",
+            "run.googleapis.com/urls": "[\"https://traveler-profile-service-195821190183.us-central1.run.app\",\"https://traveler-profile-service-vd3gw5wpna-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "miguens@google.com",
+            "serving.knative.dev/lastModifier": "miguens@google.com"
+          },
+          "creationTimestamp": "2025-12-03T22:15:39.125341Z",
+          "generation": 5,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "traveler-profile-service",
+          "namespace": "195821190183",
+          "resourceVersion": "AAZFE+8v9Y0",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/services/traveler-profile-service",
+          "uid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "542.0.0",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "lobagaodpq",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1000m",
+                      "memory": "512Mi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+              "timeoutSeconds": 300
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2025-12-03T22:42:59.856781Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:42:56.223925Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:42:59.830895Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "traveler-profile-service-00005-xgs",
+          "latestReadyRevisionName": "traveler-profile-service-00005-xgs",
+          "observedGeneration": 5,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "traveler-profile-service-00005-xgs"
+            }
+          ],
+          "url": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app"
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Service traveler-profile-service."
+      }
+    },
+    "receiveTimestamp": "2025-12-03T22:43:00.621948650Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2025-12-03T22:42:59.867030Z"
+  },
+  {
+    "insertId": "tpmhace39lju",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.ReplaceService",
+      "resourceName": "namespaces/emea-bootcamp-2025/revisions/traveler-profile-service-00005-xgs",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Revision",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Revision",
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "100",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "542.0.0",
+            "run.googleapis.com/operation-id": "5fd86259-2329-49fe-b12b-1b2c1945eb5f",
+            "run.googleapis.com/startup-cpu-boost": "true",
+            "serving.knative.dev/creator": "miguens@google.com"
+          },
+          "creationTimestamp": "2025-12-03T22:42:53.208298Z",
+          "generation": 1,
+          "labels": {
+            "client.knative.dev/nonce": "lobagaodpq",
+            "cloud.googleapis.com/location": "us-central1",
+            "run.googleapis.com/startupProbeType": "Default",
+            "serving.knative.dev/configuration": "traveler-profile-service",
+            "serving.knative.dev/configurationGeneration": "5",
+            "serving.knative.dev/route": "traveler-profile-service",
+            "serving.knative.dev/service": "traveler-profile-service",
+            "serving.knative.dev/serviceUid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+          },
+          "name": "traveler-profile-service-00005-xgs",
+          "namespace": "195821190183",
+          "ownerReferences": [
+            {
+              "apiVersion": "serving.knative.dev/v1",
+              "blockOwnerDeletion": true,
+              "controller": true,
+              "kind": "Configuration",
+              "name": "traveler-profile-service",
+              "uid": "57cdc8dc-a119-42aa-9ea1-93a9500b5497"
+            }
+          ],
+          "resourceVersion": "AAZFE+8ctsA",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/revisions/traveler-profile-service-00005-xgs",
+          "uid": "c44c9380-ca17-43e2-9e00-a4364be49c03"
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:7353ec7dc4b5b43247aafb49a586e5261c5f2797f99e656dac61048ceea03498",
+              "name": "traveler-profile-service-1",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+          "timeoutSeconds": 300
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastTransitionTime": "2025-12-03T22:42:58.595520Z",
+              "message": "Deploying revision succeeded in 5.38s.",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:42:58.556157Z",
+              "message": "Containers became healthy.",
+              "status": "True",
+              "type": "ContainerHealthy"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:42:56.157040Z",
+              "message": "Container image import completed in 2.4s.",
+              "status": "True",
+              "type": "ContainerReady"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:42:57.625287Z",
+              "message": "Provisioning imported containers completed in 1.47s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+              "status": "True",
+              "type": "ResourcesAvailable"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "imageDigest": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:7353ec7dc4b5b43247aafb49a586e5261c5f2797f99e656dac61048ceea03498",
+              "name": "traveler-profile-service-1"
+            }
+          ],
+          "imageDigest": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:7353ec7dc4b5b43247aafb49a586e5261c5f2797f99e656dac61048ceea03498",
+          "logUrl": "https://console.cloud.google.com/logs/viewer?project=emea-bootcamp-2025&resource=cloud_run_revision/service_name/traveler-profile-service/revision_name/traveler-profile-service-00005-xgs&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22traveler-profile-service%22%0Aresource.labels.revision_name%3D%22traveler-profile-service-00005-xgs%22",
+          "observedGeneration": 1
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Revision traveler-profile-service-00005-xgs with message: Deploying revision succeeded in 5.38s."
+      }
+    },
+    "receiveTimestamp": "2025-12-03T22:42:59.495529226Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00005-xgs",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2025-12-03T22:42:58.605518Z"
+  },
+  {
+    "insertId": "6930bcf200085e660415ea4e",
+    "labels": {
+      "instanceId": "0014778296757406c40619f9babbee4b241440b8dd2181e3b12b0a61acad1927a336758fe9e3013c074f849664382973e1f4196bc2dfbfd19ea6639244643be71ab2e32155fdb9a0abff92b9bdd0b5"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:58.869589485Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00005-xgs",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:58 +0000] [2] [INFO] Booting worker with pid: 2",
+    "timestamp": "2025-12-03T22:42:58.548454Z"
+  },
+  {
+    "insertId": "6930bcf200084e946d9a0c90",
+    "labels": {
+      "instanceId": "0014778296757406c40619f9babbee4b241440b8dd2181e3b12b0a61acad1927a336758fe9e3013c074f849664382973e1f4196bc2dfbfd19ea6639244643be71ab2e32155fdb9a0abff92b9bdd0b5"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:42:58.708157910Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00005-xgs",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"traveler-profile-service-1\" on port 8080.",
+    "timestamp": "2025-12-03T22:42:58.544404Z"
+  },
+  {
+    "insertId": "6930bcf20008294a1f22e92e",
+    "labels": {
+      "instanceId": "0014778296757406c40619f9babbee4b241440b8dd2181e3b12b0a61acad1927a336758fe9e3013c074f849664382973e1f4196bc2dfbfd19ea6639244643be71ab2e32155fdb9a0abff92b9bdd0b5"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:58.869589485Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00005-xgs",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:58 +0000] [1] [INFO] Using worker: sync",
+    "timestamp": "2025-12-03T22:42:58.534858Z"
+  },
+  {
+    "insertId": "6930bcf20008290c1fc704c2",
+    "labels": {
+      "instanceId": "0014778296757406c40619f9babbee4b241440b8dd2181e3b12b0a61acad1927a336758fe9e3013c074f849664382973e1f4196bc2dfbfd19ea6639244643be71ab2e32155fdb9a0abff92b9bdd0b5"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:58.869589485Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00005-xgs",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:58 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)",
+    "timestamp": "2025-12-03T22:42:58.534796Z"
+  },
+  {
+    "insertId": "6930bcf200082036143e3181",
+    "labels": {
+      "instanceId": "0014778296757406c40619f9babbee4b241440b8dd2181e3b12b0a61acad1927a336758fe9e3013c074f849664382973e1f4196bc2dfbfd19ea6639244643be71ab2e32155fdb9a0abff92b9bdd0b5"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:58.537342163Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00005-xgs",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:58 +0000] [1] [INFO] Starting gunicorn 23.0.0",
+    "timestamp": "2025-12-03T22:42:58.532534Z"
+  },
+  {
+    "insertId": "6930bcf1000abfeec2d5c0f5",
+    "labels": {
+      "instanceId": "0014778296757406c40619f9babbee4b241440b8dd2181e3b12b0a61acad1927a336758fe9e3013c074f849664382973e1f4196bc2dfbfd19ea6639244643be71ab2e32155fdb9a0abff92b9bdd0b5",
+      "scaling_reason": "DEPLOYMENT_ROLLOUT"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:42:57.710691320Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00005-xgs",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.",
+    "timestamp": "2025-12-03T22:42:57.704494Z"
+  },
+  {
+    "insertId": "6930bcf0000d0272e911e397",
+    "labels": {
+      "instanceId": "0014778296b1240c29fcf728c6d3f3b43d2c9490d134d0223ce58b1fc36775bcbe4812e758c0c5882640c9db5badc4d004cd20d6ec6c984418d1a543724750ab08c787f1f6cd91a2e7e27ec75e5f49"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:57.087009183Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:56 +0000] [1] [INFO] Shutting down: Master",
+    "timestamp": "2025-12-03T22:42:56.852594Z"
+  },
+  {
+    "insertId": "6930bcf0000d01b2b5bce771",
+    "labels": {
+      "instanceId": "00147782961eaf1171bd4e07874e051ae84a2a5793debee8df0eed0d74ce2fb557d5c581c5ec8e7412585a44b3ad9e4617d92346b4f46b79e71d315a73526912cf3581ab62fd52f374833c4c2504a254"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:57.085857686Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:56 +0000] [1] [INFO] Shutting down: Master",
+    "timestamp": "2025-12-03T22:42:56.852402Z"
+  },
+  {
+    "insertId": "6930bcf0000b7ee52e55bd57",
+    "labels": {
+      "instanceId": "00147782961eaf1171bd4e07874e051ae84a2a5793debee8df0eed0d74ce2fb557d5c581c5ec8e7412585a44b3ad9e4617d92346b4f46b79e71d315a73526912cf3581ab62fd52f374833c4c2504a254"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:57.085857686Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:56 +0000] [2] [INFO] Worker exiting (pid: 2)",
+    "timestamp": "2025-12-03T22:42:56.753381Z"
+  },
+  {
+    "insertId": "6930bcf0000b7b983bb170e8",
+    "labels": {
+      "instanceId": "0014778296b1240c29fcf728c6d3f3b43d2c9490d134d0223ce58b1fc36775bcbe4812e758c0c5882640c9db5badc4d004cd20d6ec6c984418d1a543724750ab08c787f1f6cd91a2e7e27ec75e5f49"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:57.087009183Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:56 +0000] [2] [INFO] Worker exiting (pid: 2)",
+    "timestamp": "2025-12-03T22:42:56.752536Z"
+  },
+  {
+    "insertId": "6930bcf0000b74aab1738ecd",
+    "labels": {
+      "instanceId": "00147782961eaf1171bd4e07874e051ae84a2a5793debee8df0eed0d74ce2fb557d5c581c5ec8e7412585a44b3ad9e4617d92346b4f46b79e71d315a73526912cf3581ab62fd52f374833c4c2504a254"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:56.754450935Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:56 +0000] [1] [INFO] Handling signal: term",
+    "timestamp": "2025-12-03T22:42:56.750762Z"
+  },
+  {
+    "insertId": "6930bcf0000b745ac8ed245b",
+    "labels": {
+      "instanceId": "0014778296b1240c29fcf728c6d3f3b43d2c9490d134d0223ce58b1fc36775bcbe4812e758c0c5882640c9db5badc4d004cd20d6ec6c984418d1a543724750ab08c787f1f6cd91a2e7e27ec75e5f49"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:56.755185199Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:56 +0000] [1] [INFO] Handling signal: term",
+    "timestamp": "2025-12-03T22:42:56.750682Z"
+  },
+  {
+    "insertId": "1c23ab7e20ly4",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "oauthInfo": {
+          "oauthClientId": "32555940559.apps.googleusercontent.com"
+        },
+        "principalEmail": "miguens@google.com",
+        "principalSubject": "user:miguens@google.com"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "run.services.update",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+          "resourceAttributes": {}
+        },
+        {
+          "granted": true,
+          "permission": "run.services.update",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+          "resourceAttributes": {
+            "name": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+            "service": "run.googleapis.com/",
+            "type": "run.googleapis.com/Service"
+          }
+        }
+      ],
+      "methodName": "google.cloud.run.v1.Services.ReplaceService",
+      "request": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.ReplaceServiceRequest",
+        "name": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+        "service": {
+          "apiVersion": "serving.knative.dev/v1",
+          "kind": "Service",
+          "metadata": {
+            "annotations": {
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "542.0.0",
+              "run.googleapis.com/ingress": "all",
+              "run.googleapis.com/ingress-status": "all",
+              "run.googleapis.com/operation-id": "feb85e4d-d73a-4b83-89d6-3f9915286417",
+              "run.googleapis.com/urls": "[\"https://traveler-profile-service-195821190183.us-central1.run.app\",\"https://traveler-profile-service-vd3gw5wpna-uc.a.run.app\"]",
+              "serving.knative.dev/creator": "miguens@google.com",
+              "serving.knative.dev/lastModifier": "miguens@google.com"
+            },
+            "creationTimestamp": "2025-12-03T22:15:39.125341Z",
+            "generation": 4,
+            "labels": {
+              "cloud.googleapis.com/location": "us-central1"
+            },
+            "name": "traveler-profile-service",
+            "namespace": "195821190183",
+            "resourceVersion": "AAZFE+qLt48",
+            "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/services/traveler-profile-service",
+            "uid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+          },
+          "spec": {
+            "template": {
+              "metadata": {
+                "annotations": {
+                  "autoscaling.knative.dev/maxScale": "100",
+                  "run.googleapis.com/client-name": "gcloud",
+                  "run.googleapis.com/client-version": "542.0.0",
+                  "run.googleapis.com/startup-cpu-boost": "true"
+                },
+                "labels": {
+                  "client.knative.dev/nonce": "lobagaodpq",
+                  "run.googleapis.com/startupProbeType": "Default"
+                }
+              },
+              "spec": {
+                "containerConcurrency": 80,
+                "containers": [
+                  {
+                    "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service",
+                    "resources": {
+                      "limits": {
+                        "cpu": "1000m",
+                        "memory": "512Mi"
+                      }
+                    }
+                  }
+                ],
+                "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+                "timeoutSeconds": 300
+              }
+            },
+            "traffic": [
+              {
+                "latestRevision": true,
+                "percent": 100
+              }
+            ]
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2025-12-03T22:41:41.984143Z",
+                "status": "True",
+                "type": "Ready"
+              },
+              {
+                "lastTransitionTime": "2025-12-03T22:41:36.210429Z",
+                "status": "True",
+                "type": "ConfigurationsReady"
+              },
+              {
+                "lastTransitionTime": "2025-12-03T22:41:41.953372Z",
+                "status": "True",
+                "type": "RoutesReady"
+              }
+            ],
+            "latestCreatedRevisionName": "traveler-profile-service-00004-b9b",
+            "latestReadyRevisionName": "traveler-profile-service-00004-b9b",
+            "observedGeneration": 4,
+            "traffic": [
+              {
+                "latestRevision": true,
+                "percent": 100,
+                "revisionName": "traveler-profile-service-00004-b9b"
+              }
+            ],
+            "url": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app"
+          }
+        }
+      },
+      "requestMetadata": {
+        "callerIp": "181.87.112.30",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/542.0.0 command/gcloud.run.deploy invocation-id/49aa0aa40ad149958c9514d575142e01 environment/None environment-version/None client-os/MACOSX client-os-ver/24.6.0 client-pltf-arch/arm interactive/False from-script/True python/3.12.2 term/xterm-256color (Macintosh; Intel Mac OS X 24.6.0),gzip(gfe)",
+        "destinationAttributes": {},
+        "requestAttributes": {
+          "auth": {},
+          "time": "2025-12-03T22:42:53.165978Z"
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      },
+      "resourceName": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+      "serviceName": "run.googleapis.com"
+    },
+    "receiveTimestamp": "2025-12-03T22:42:53.757487702Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "NOTICE",
+    "timestamp": "2025-12-03T22:42:52.930900Z"
+  },
+  {
+    "insertId": "6930bcd30007c41568c2057f",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:27.746178831Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:27 +0000] [1] [INFO] Shutting down: Master",
+    "timestamp": "2025-12-03T22:42:27.508949Z"
+  },
+  {
+    "insertId": "6930bcd300063d6c6e2e514a",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "}",
+    "timestamp": "2025-12-03T22:42:27.408940Z"
+  },
+  {
+    "insertId": "6930bcd300063d694350d1f2",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "  }",
+    "timestamp": "2025-12-03T22:42:27.408937Z"
+  },
+  {
+    "insertId": "6930bcd300063d67ad10daaa",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"document_limitations\": null",
+    "timestamp": "2025-12-03T22:42:27.408935Z"
+  },
+  {
+    "insertId": "6930bcd300063d6432fe004e",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"safety_tools_usage\": null,",
+    "timestamp": "2025-12-03T22:42:27.408932Z"
+  },
+  {
+    "insertId": "6930bcd300063d62cbcef7e1",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"payment_preference\": null,",
+    "timestamp": "2025-12-03T22:42:27.408930Z"
+  },
+  {
+    "insertId": "6930bcd300063d5f325bb42f",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"current_insurance_provider\": null,",
+    "timestamp": "2025-12-03T22:42:27.408927Z"
+  },
+  {
+    "insertId": "6930bcd300063d5c770c9535",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"is_business_purpose\": null,",
+    "timestamp": "2025-12-03T22:42:27.408924Z"
+  },
+  {
+    "insertId": "6930bcd300063d59b02bd27a",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"winter_conditions_travel\": null,",
+    "timestamp": "2025-12-03T22:42:27.408921Z"
+  },
+  {
+    "insertId": "6930bcd300063d566335158b",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"interested_in_insurance\": null,",
+    "timestamp": "2025-12-03T22:42:27.408918Z"
+  },
+  {
+    "insertId": "6930bcd300063d534c295fd3",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"has_valid_passport\": null,",
+    "timestamp": "2025-12-03T22:42:27.408915Z"
+  },
+  {
+    "insertId": "6930bcd300063d505c1e9826",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"is_primary_traveler\": null,",
+    "timestamp": "2025-12-03T22:42:27.408912Z"
+  },
+  {
+    "insertId": "6930bcd300063d4db39ff69f",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"has_loyalty_program\": null,",
+    "timestamp": "2025-12-03T22:42:27.408909Z"
+  },
+  {
+    "insertId": "6930bcd300063d4b0718f3c3",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"has_booked_before\": null,",
+    "timestamp": "2025-12-03T22:42:27.408907Z"
+  },
+  {
+    "insertId": "6930bcd300063d48a3c17f88",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"planned_booking_date\": null,",
+    "timestamp": "2025-12-03T22:42:27.408904Z"
+  },
+  {
+    "insertId": "6930bcd300063d4598650a22",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"primary_stay_location\": null,",
+    "timestamp": "2025-12-03T22:42:27.408901Z"
+  },
+  {
+    "insertId": "6930bcd300063d42382e5012",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"preferred_departure_details\": null,",
+    "timestamp": "2025-12-03T22:42:27.408898Z"
+  },
+  {
+    "insertId": "6930bcd300063d3f8e7761e5",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"trip_end_date\": null,",
+    "timestamp": "2025-12-03T22:42:27.408895Z"
+  },
+  {
+    "insertId": "6930bcd300063d3a045bdd61",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.746509625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"trip_start_date\": null,",
+    "timestamp": "2025-12-03T22:42:27.408890Z"
+  },
+  {
+    "insertId": "6930bcd300063d376a19734a",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.414856001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"phone_number\": null,",
+    "timestamp": "2025-12-03T22:42:27.408887Z"
+  },
+  {
+    "insertId": "6930bcd300063d35e454d25b",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.414856001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"email_address\": null,",
+    "timestamp": "2025-12-03T22:42:27.408885Z"
+  },
+  {
+    "insertId": "6930bcd300063d2d350b48c6",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.414856001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"date_of_birth\": null,",
+    "timestamp": "2025-12-03T22:42:27.408877Z"
+  },
+  {
+    "insertId": "6930bcd300063d2ac4646de3",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.414856001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"client_last_name\": null,",
+    "timestamp": "2025-12-03T22:42:27.408874Z"
+  },
+  {
+    "insertId": "6930bcd300063d2721fdb01a",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.414856001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "    \"client_first_name\": \"alberto\",",
+    "timestamp": "2025-12-03T22:42:27.408871Z"
+  },
+  {
+    "insertId": "6930bcd300063d24560857d9",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.414856001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "  \"agentDisplayMessage\": {",
+    "timestamp": "2025-12-03T22:42:27.408868Z"
+  },
+  {
+    "insertId": "6930bcd300063d207a94a098",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.414856001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "{",
+    "timestamp": "2025-12-03T22:42:27.408864Z"
+  },
+  {
+    "insertId": "6930bcd300063d1db7f6ddc6",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.414856001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "--- Sending Response ---",
+    "timestamp": "2025-12-03T22:42:27.408861Z"
+  },
+  {
+    "insertId": "6930bcd300063d1966146ebe",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.414856001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "}",
+    "timestamp": "2025-12-03T22:42:27.408857Z"
+  },
+  {
+    "insertId": "6930bcd300063d163c060a67",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.414856001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "  \"client_first_name\": \"alberto\"",
+    "timestamp": "2025-12-03T22:42:27.408854Z"
+  },
+  {
+    "insertId": "6930bcd300063d118e4634f1",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.414856001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "{",
+    "timestamp": "2025-12-03T22:42:27.408849Z"
+  },
+  {
+    "insertId": "6930bcd300063cfa4deebe62",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2025-12-03T22:42:27.414856001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "--- Received Request ---",
+    "timestamp": "2025-12-03T22:42:27.408826Z"
+  },
+  {
+    "insertId": "6930bcd300063c28987f38a5",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:27.746178831Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:27 +0000] [2] [INFO] Worker exiting (pid: 2)",
+    "timestamp": "2025-12-03T22:42:27.408616Z"
+  },
+  {
+    "insertId": "6930bcd30006381647c9ec19",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:42:27.411911853Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:42:27 +0000] [1] [INFO] Handling signal: term",
+    "timestamp": "2025-12-03T22:42:27.407574Z"
+  },
+  {
+    "insertId": "h8axfve3ud9m",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.ReplaceService",
+      "resourceName": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Service",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "542.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/operation-id": "feb85e4d-d73a-4b83-89d6-3f9915286417",
+            "run.googleapis.com/urls": "[\"https://traveler-profile-service-195821190183.us-central1.run.app\",\"https://traveler-profile-service-vd3gw5wpna-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "miguens@google.com",
+            "serving.knative.dev/lastModifier": "miguens@google.com"
+          },
+          "creationTimestamp": "2025-12-03T22:15:39.125341Z",
+          "generation": 4,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "traveler-profile-service",
+          "namespace": "195821190183",
+          "resourceVersion": "AAZFE+qLt48",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/services/traveler-profile-service",
+          "uid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "542.0.0",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "uvprxuprow",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1000m",
+                      "memory": "512Mi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+              "timeoutSeconds": 300
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2025-12-03T22:41:41.984143Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:41:36.210429Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:41:41.953372Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "traveler-profile-service-00004-b9b",
+          "latestReadyRevisionName": "traveler-profile-service-00004-b9b",
+          "observedGeneration": 4,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "traveler-profile-service-00004-b9b"
+            }
+          ],
+          "url": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app"
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Service traveler-profile-service."
+      }
+    },
+    "receiveTimestamp": "2025-12-03T22:41:42.359974365Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2025-12-03T22:41:41.996826Z"
+  },
+  {
+    "insertId": "-ymvzrhddi3u",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.ReplaceService",
+      "resourceName": "namespaces/emea-bootcamp-2025/revisions/traveler-profile-service-00004-b9b",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Revision",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Revision",
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "100",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "542.0.0",
+            "run.googleapis.com/operation-id": "feb85e4d-d73a-4b83-89d6-3f9915286417",
+            "run.googleapis.com/startup-cpu-boost": "true",
+            "serving.knative.dev/creator": "miguens@google.com"
+          },
+          "creationTimestamp": "2025-12-03T22:40:04.629450Z",
+          "generation": 1,
+          "labels": {
+            "client.knative.dev/nonce": "uvprxuprow",
+            "cloud.googleapis.com/location": "us-central1",
+            "run.googleapis.com/startupProbeType": "Default",
+            "serving.knative.dev/configuration": "traveler-profile-service",
+            "serving.knative.dev/configurationGeneration": "4",
+            "serving.knative.dev/route": "traveler-profile-service",
+            "serving.knative.dev/service": "traveler-profile-service",
+            "serving.knative.dev/serviceUid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+          },
+          "name": "traveler-profile-service-00004-b9b",
+          "namespace": "195821190183",
+          "ownerReferences": [
+            {
+              "apiVersion": "serving.knative.dev/v1",
+              "blockOwnerDeletion": true,
+              "controller": true,
+              "kind": "Configuration",
+              "name": "traveler-profile-service",
+              "uid": "57cdc8dc-a119-42aa-9ea1-93a9500b5497"
+            }
+          ],
+          "resourceVersion": "AAZFE+oy0F4",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/revisions/traveler-profile-service-00004-b9b",
+          "uid": "0c8bf34d-8a18-465b-b299-4a0c90f2059b"
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:1033bdf29c5e3b360f58b764350bfa7f548d4bb277298e6856cb19f636aa20de",
+              "name": "traveler-profile-service-1",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+          "timeoutSeconds": 300
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastTransitionTime": "2025-12-03T22:41:36.157790Z",
+              "message": "Deploying revision succeeded in 1m31.53s.",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:41:36.117494Z",
+              "message": "Containers became healthy.",
+              "status": "True",
+              "type": "ContainerHealthy"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:40:07.698953Z",
+              "message": "Container image import completed in 2.4s.",
+              "status": "True",
+              "type": "ContainerReady"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:41:35.135664Z",
+              "message": "Provisioning imported containers completed in 1m27.43s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+              "status": "True",
+              "type": "ResourcesAvailable"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "imageDigest": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:1033bdf29c5e3b360f58b764350bfa7f548d4bb277298e6856cb19f636aa20de",
+              "name": "traveler-profile-service-1"
+            }
+          ],
+          "imageDigest": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:1033bdf29c5e3b360f58b764350bfa7f548d4bb277298e6856cb19f636aa20de",
+          "logUrl": "https://console.cloud.google.com/logs/viewer?project=emea-bootcamp-2025&resource=cloud_run_revision/service_name/traveler-profile-service/revision_name/traveler-profile-service-00004-b9b&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22traveler-profile-service%22%0Aresource.labels.revision_name%3D%22traveler-profile-service-00004-b9b%22",
+          "observedGeneration": 1
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Revision traveler-profile-service-00004-b9b with message: Deploying revision succeeded in 1m31.53s."
+      }
+    },
+    "receiveTimestamp": "2025-12-03T22:41:36.344254130Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00004-b9b",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2025-12-03T22:41:36.170764Z"
+  },
+  {
+    "insertId": "6930bca00001ba8f08d3e8f6",
+    "labels": {
+      "instanceId": "0014778296567ca8b72519b91f8b25e95d48b8ceee932695b9771f2d24e8c6661d64c0375b058c84f25414185a224d93229d22f525fcd8619db12bbc66810289536fd438c834f58dbaa5411f5ce243"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:41:36.421227141Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00004-b9b",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:41:36 +0000] [2] [INFO] Booting worker with pid: 2",
+    "timestamp": "2025-12-03T22:41:36.113295Z"
+  },
+  {
+    "insertId": "6930bca00001971d72ff8f62",
+    "labels": {
+      "instanceId": "0014778296567ca8b72519b91f8b25e95d48b8ceee932695b9771f2d24e8c6661d64c0375b058c84f25414185a224d93229d22f525fcd8619db12bbc66810289536fd438c834f58dbaa5411f5ce243"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:41:36.222745846Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00004-b9b",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"traveler-profile-service-1\" on port 8080.",
+    "timestamp": "2025-12-03T22:41:36.104221Z"
+  },
+  {
+    "insertId": "6930bca0000147096cf0cdb1",
+    "labels": {
+      "instanceId": "0014778296567ca8b72519b91f8b25e95d48b8ceee932695b9771f2d24e8c6661d64c0375b058c84f25414185a224d93229d22f525fcd8619db12bbc66810289536fd438c834f58dbaa5411f5ce243"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:41:36.421227141Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00004-b9b",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:41:36 +0000] [1] [INFO] Using worker: sync",
+    "timestamp": "2025-12-03T22:41:36.083721Z"
+  },
+  {
+    "insertId": "6930bca0000146e3200fa5f7",
+    "labels": {
+      "instanceId": "0014778296567ca8b72519b91f8b25e95d48b8ceee932695b9771f2d24e8c6661d64c0375b058c84f25414185a224d93229d22f525fcd8619db12bbc66810289536fd438c834f58dbaa5411f5ce243"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:41:36.421227141Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00004-b9b",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:41:36 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)",
+    "timestamp": "2025-12-03T22:41:36.083683Z"
+  },
+  {
+    "insertId": "6930bca000013eb629a5738f",
+    "labels": {
+      "instanceId": "0014778296567ca8b72519b91f8b25e95d48b8ceee932695b9771f2d24e8c6661d64c0375b058c84f25414185a224d93229d22f525fcd8619db12bbc66810289536fd438c834f58dbaa5411f5ce243"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:41:36.083650942Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00004-b9b",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:41:36 +0000] [1] [INFO] Starting gunicorn 23.0.0",
+    "timestamp": "2025-12-03T22:41:36.081590Z"
+  },
+  {
+    "insertId": "6930bc9f000359782b94a1c9",
+    "labels": {
+      "instanceId": "0014778296567ca8b72519b91f8b25e95d48b8ceee932695b9771f2d24e8c6661d64c0375b058c84f25414185a224d93229d22f525fcd8619db12bbc66810289536fd438c834f58dbaa5411f5ce243",
+      "scaling_reason": "DEPLOYMENT_ROLLOUT"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:41:35.222080352Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00004-b9b",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.",
+    "timestamp": "2025-12-03T22:41:35.219512Z"
+  },
+  {
+    "insertId": "1d4kxf8e20owx",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "oauthInfo": {
+          "oauthClientId": "32555940559.apps.googleusercontent.com"
+        },
+        "principalEmail": "miguens@google.com",
+        "principalSubject": "user:miguens@google.com"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "run.services.update",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+          "resourceAttributes": {}
+        },
+        {
+          "granted": true,
+          "permission": "run.services.update",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+          "resourceAttributes": {
+            "name": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+            "service": "run.googleapis.com/",
+            "type": "run.googleapis.com/Service"
+          }
+        }
+      ],
+      "methodName": "google.cloud.run.v1.Services.ReplaceService",
+      "request": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.ReplaceServiceRequest",
+        "name": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+        "service": {
+          "apiVersion": "serving.knative.dev/v1",
+          "kind": "Service",
+          "metadata": {
+            "annotations": {
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "542.0.0",
+              "run.googleapis.com/ingress": "all",
+              "run.googleapis.com/ingress-status": "all",
+              "run.googleapis.com/operation-id": "2e0a9e1a-0510-419d-bb91-5b1ba93515ea",
+              "run.googleapis.com/urls": "[\"https://traveler-profile-service-195821190183.us-central1.run.app\",\"https://traveler-profile-service-vd3gw5wpna-uc.a.run.app\"]",
+              "serving.knative.dev/creator": "miguens@google.com",
+              "serving.knative.dev/lastModifier": "miguens@google.com"
+            },
+            "creationTimestamp": "2025-12-03T22:15:39.125341Z",
+            "generation": 3,
+            "labels": {
+              "cloud.googleapis.com/location": "us-central1"
+            },
+            "name": "traveler-profile-service",
+            "namespace": "195821190183",
+            "resourceVersion": "AAZFE9wO8fM",
+            "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/services/traveler-profile-service",
+            "uid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+          },
+          "spec": {
+            "template": {
+              "metadata": {
+                "annotations": {
+                  "autoscaling.knative.dev/maxScale": "100",
+                  "run.googleapis.com/client-name": "gcloud",
+                  "run.googleapis.com/client-version": "542.0.0",
+                  "run.googleapis.com/startup-cpu-boost": "true"
+                },
+                "labels": {
+                  "client.knative.dev/nonce": "uvprxuprow",
+                  "run.googleapis.com/startupProbeType": "Default"
+                }
+              },
+              "spec": {
+                "containerConcurrency": 80,
+                "containers": [
+                  {
+                    "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service",
+                    "resources": {
+                      "limits": {
+                        "cpu": "1000m",
+                        "memory": "512Mi"
+                      }
+                    }
+                  }
+                ],
+                "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+                "timeoutSeconds": 300
+              }
+            },
+            "traffic": [
+              {
+                "latestRevision": true,
+                "percent": 100
+              }
+            ]
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2025-12-03T22:37:38.926067Z",
+                "status": "True",
+                "type": "Ready"
+              },
+              {
+                "lastTransitionTime": "2025-12-03T22:37:19.560110Z",
+                "status": "True",
+                "type": "ConfigurationsReady"
+              },
+              {
+                "lastTransitionTime": "2025-12-03T22:37:38.886911Z",
+                "status": "True",
+                "type": "RoutesReady"
+              }
+            ],
+            "latestCreatedRevisionName": "traveler-profile-service-00003-9qp",
+            "latestReadyRevisionName": "traveler-profile-service-00003-9qp",
+            "observedGeneration": 3,
+            "traffic": [
+              {
+                "latestRevision": true,
+                "percent": 100,
+                "revisionName": "traveler-profile-service-00003-9qp"
+              }
+            ],
+            "url": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app"
+          }
+        }
+      },
+      "requestMetadata": {
+        "callerIp": "181.87.112.30",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/542.0.0 command/gcloud.run.deploy invocation-id/4a73f513e4c048aaa30c4c29e30bf977 environment/None environment-version/None client-os/MACOSX client-os-ver/24.6.0 client-pltf-arch/arm interactive/False from-script/True python/3.12.2 term/xterm-256color (Macintosh; Intel Mac OS X 24.6.0),gzip(gfe)",
+        "destinationAttributes": {},
+        "requestAttributes": {
+          "auth": {},
+          "time": "2025-12-03T22:40:04.516254Z"
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      },
+      "resourceName": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+      "serviceName": "run.googleapis.com"
+    },
+    "receiveTimestamp": "2025-12-03T22:40:04.652086154Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "NOTICE",
+    "timestamp": "2025-12-03T22:40:04.251182Z"
+  },
+  {
+    "insertId": "6930bbb3000e4ad1d18afa60",
+    "labels": {
+      "instanceId": "00147782961eaf1171bd4e07874e051ae84a2a5793debee8df0eed0d74ce2fb557d5c581c5ec8e7412585a44b3ad9e4617d92346b4f46b79e71d315a73526912cf3581ab62fd52f374833c4c2504a254"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:37:40.067710813Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"traveler-profile-service-1\" on port 8080.",
+    "timestamp": "2025-12-03T22:37:39.936657Z"
+  },
+  {
+    "insertId": "6930bbb3000e2e0688ed9109",
+    "labels": {
+      "instanceId": "00147782961eaf1171bd4e07874e051ae84a2a5793debee8df0eed0d74ce2fb557d5c581c5ec8e7412585a44b3ad9e4617d92346b4f46b79e71d315a73526912cf3581ab62fd52f374833c4c2504a254"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:37:40.250812363Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:37:39 +0000] [2] [INFO] Booting worker with pid: 2",
+    "timestamp": "2025-12-03T22:37:39.929286Z"
+  },
+  {
+    "insertId": "6930bbb3000e00dd4b817293",
+    "labels": {
+      "instanceId": "00147782961eaf1171bd4e07874e051ae84a2a5793debee8df0eed0d74ce2fb557d5c581c5ec8e7412585a44b3ad9e4617d92346b4f46b79e71d315a73526912cf3581ab62fd52f374833c4c2504a254"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:37:40.250812363Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:37:39 +0000] [1] [INFO] Using worker: sync",
+    "timestamp": "2025-12-03T22:37:39.917725Z"
+  },
+  {
+    "insertId": "6930bbb3000e00652c4e9c27",
+    "labels": {
+      "instanceId": "00147782961eaf1171bd4e07874e051ae84a2a5793debee8df0eed0d74ce2fb557d5c581c5ec8e7412585a44b3ad9e4617d92346b4f46b79e71d315a73526912cf3581ab62fd52f374833c4c2504a254"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:37:40.250812363Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:37:39 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)",
+    "timestamp": "2025-12-03T22:37:39.917605Z"
+  },
+  {
+    "insertId": "6930bbb3000df4f6726680ea",
+    "labels": {
+      "instanceId": "00147782961eaf1171bd4e07874e051ae84a2a5793debee8df0eed0d74ce2fb557d5c581c5ec8e7412585a44b3ad9e4617d92346b4f46b79e71d315a73526912cf3581ab62fd52f374833c4c2504a254"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:37:39.918421005Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:37:39 +0000] [1] [INFO] Starting gunicorn 23.0.0",
+    "timestamp": "2025-12-03T22:37:39.914678Z"
+  },
+  {
+    "insertId": "6930bbb30000ff017358f2ed",
+    "labels": {
+      "instanceId": "00147782961eaf1171bd4e07874e051ae84a2a5793debee8df0eed0d74ce2fb557d5c581c5ec8e7412585a44b3ad9e4617d92346b4f46b79e71d315a73526912cf3581ab62fd52f374833c4c2504a254",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:37:39.070044677Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2025-12-03T22:37:39.065281Z"
+  },
+  {
+    "insertId": "4r0z6fe31qyi",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.ReplaceService",
+      "resourceName": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Service",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "542.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/operation-id": "2e0a9e1a-0510-419d-bb91-5b1ba93515ea",
+            "run.googleapis.com/urls": "[\"https://traveler-profile-service-195821190183.us-central1.run.app\",\"https://traveler-profile-service-vd3gw5wpna-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "miguens@google.com",
+            "serving.knative.dev/lastModifier": "miguens@google.com"
+          },
+          "creationTimestamp": "2025-12-03T22:15:39.125341Z",
+          "generation": 3,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "traveler-profile-service",
+          "namespace": "195821190183",
+          "resourceVersion": "AAZFE9wO8fM",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/services/traveler-profile-service",
+          "uid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "542.0.0",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "amishkcukn",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1000m",
+                      "memory": "512Mi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+              "timeoutSeconds": 300
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2025-12-03T22:37:38.926067Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:37:19.560110Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:37:38.886911Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "traveler-profile-service-00003-9qp",
+          "latestReadyRevisionName": "traveler-profile-service-00003-9qp",
+          "observedGeneration": 3,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "traveler-profile-service-00003-9qp"
+            }
+          ],
+          "url": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app"
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Service traveler-profile-service."
+      }
+    },
+    "receiveTimestamp": "2025-12-03T22:37:39.880769095Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2025-12-03T22:37:38.940185Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.002607750s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app/",
+      "remoteIp": "172.253.192.244",
+      "requestMethod": "GET",
+      "requestSize": "1041",
+      "requestUrl": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app/favicon.ico",
+      "responseSize": "332",
+      "serverIp": "34.143.75.2",
+      "status": 404,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+    },
+    "insertId": "6930bba30003f109afa31356",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2025-12-03T22:37:23.379256644Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "WARNING",
+    "spanId": "5cd26b4dd9d779b3",
+    "timestamp": "2025-12-03T22:37:23.254132Z",
+    "trace": "projects/emea-bootcamp-2025/traces/debaa64dbd5ddf3fc6079c5955c41b32"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.002496320s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "172.253.192.244",
+      "requestMethod": "GET",
+      "requestSize": "1079",
+      "requestUrl": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app/",
+      "responseSize": "332",
+      "serverIp": "34.143.75.2",
+      "status": 404,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+    },
+    "insertId": "6930bba30002a7788315ec38",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2025-12-03T22:37:23.379256644Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "WARNING",
+    "spanId": "d407065c3feee985",
+    "timestamp": "2025-12-03T22:37:23.169611Z",
+    "trace": "projects/emea-bootcamp-2025/traces/4200490892df7089c6079c5955c41cee"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.003172140s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app/",
+      "remoteIp": "172.253.234.212",
+      "requestMethod": "GET",
+      "requestSize": "1041",
+      "requestUrl": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app/favicon.ico",
+      "responseSize": "332",
+      "serverIp": "34.143.73.2",
+      "status": 404,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+    },
+    "insertId": "6930bba300024b2605d19560",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2025-12-03T22:37:23.379256644Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "WARNING",
+    "spanId": "3a509fb576525765",
+    "timestamp": "2025-12-03T22:37:23.145283Z",
+    "trace": "projects/emea-bootcamp-2025/traces/3974c60e95969addd27885d67d350f33"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.004213729s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "172.253.234.212",
+      "requestMethod": "GET",
+      "requestSize": "1079",
+      "requestUrl": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app/",
+      "responseSize": "332",
+      "serverIp": "34.143.73.2",
+      "status": 404,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+    },
+    "insertId": "6930bba30000a2e8994103c1",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2025-12-03T22:37:23.046708991Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "WARNING",
+    "spanId": "7c85d62a7ef68357",
+    "timestamp": "2025-12-03T22:37:23.027883Z",
+    "trace": "projects/emea-bootcamp-2025/traces/8e6802c37cc86720d27885d67d350b45",
+    "traceSampled": true
+  },
+  {
+    "insertId": "-5i3s4xe27xva",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.ReplaceService",
+      "resourceName": "namespaces/emea-bootcamp-2025/revisions/traveler-profile-service-00003-9qp",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Revision",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Revision",
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "100",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "542.0.0",
+            "run.googleapis.com/operation-id": "2e0a9e1a-0510-419d-bb91-5b1ba93515ea",
+            "run.googleapis.com/startup-cpu-boost": "true",
+            "serving.knative.dev/creator": "miguens@google.com"
+          },
+          "creationTimestamp": "2025-12-03T22:37:16.398587Z",
+          "generation": 1,
+          "labels": {
+            "client.knative.dev/nonce": "amishkcukn",
+            "cloud.googleapis.com/location": "us-central1",
+            "run.googleapis.com/startupProbeType": "Default",
+            "serving.knative.dev/configuration": "traveler-profile-service",
+            "serving.knative.dev/configurationGeneration": "3",
+            "serving.knative.dev/route": "traveler-profile-service",
+            "serving.knative.dev/service": "traveler-profile-service",
+            "serving.knative.dev/serviceUid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+          },
+          "name": "traveler-profile-service-00003-9qp",
+          "namespace": "195821190183",
+          "ownerReferences": [
+            {
+              "apiVersion": "serving.knative.dev/v1",
+              "blockOwnerDeletion": true,
+              "controller": true,
+              "kind": "Configuration",
+              "name": "traveler-profile-service",
+              "uid": "57cdc8dc-a119-42aa-9ea1-93a9500b5497"
+            }
+          ],
+          "resourceVersion": "AAZFE9sJuv8",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/revisions/traveler-profile-service-00003-9qp",
+          "uid": "6aa6035a-aa6c-41b5-aac7-4cb1a764afa3"
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:4f32352d114a999d594d89818e6c61e8474261bcf0b9a2541b7a2fe49cb2ee5a",
+              "name": "traveler-profile-service-1",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+          "timeoutSeconds": 300
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastTransitionTime": "2025-12-03T22:37:21.807103Z",
+              "message": "Deploying revision succeeded in 5.41s.",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:37:21.765595Z",
+              "message": "Containers became healthy.",
+              "status": "True",
+              "type": "ContainerHealthy"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:37:19.464566Z",
+              "message": "Container image import completed in 2.4s.",
+              "status": "True",
+              "type": "ContainerReady"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:37:20.922326Z",
+              "message": "Provisioning imported containers completed in 1.46s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+              "status": "True",
+              "type": "ResourcesAvailable"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "imageDigest": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:4f32352d114a999d594d89818e6c61e8474261bcf0b9a2541b7a2fe49cb2ee5a",
+              "name": "traveler-profile-service-1"
+            }
+          ],
+          "imageDigest": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:4f32352d114a999d594d89818e6c61e8474261bcf0b9a2541b7a2fe49cb2ee5a",
+          "logUrl": "https://console.cloud.google.com/logs/viewer?project=emea-bootcamp-2025&resource=cloud_run_revision/service_name/traveler-profile-service/revision_name/traveler-profile-service-00003-9qp&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22traveler-profile-service%22%0Aresource.labels.revision_name%3D%22traveler-profile-service-00003-9qp%22",
+          "observedGeneration": 1
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Revision traveler-profile-service-00003-9qp with message: Deploying revision succeeded in 5.41s."
+      }
+    },
+    "receiveTimestamp": "2025-12-03T22:37:22.593910326Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2025-12-03T22:37:21.820520Z"
+  },
+  {
+    "insertId": "6930bba1000ba03b6a346efb",
+    "labels": {
+      "instanceId": "0014778296b1240c29fcf728c6d3f3b43d2c9490d134d0223ce58b1fc36775bcbe4812e758c0c5882640c9db5badc4d004cd20d6ec6c984418d1a543724750ab08c787f1f6cd91a2e7e27ec75e5f49"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:37:22.086686622Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:37:21 +0000] [2] [INFO] Booting worker with pid: 2",
+    "timestamp": "2025-12-03T22:37:21.761915Z"
+  },
+  {
+    "insertId": "6930bba1000b7e1ab139ba0d",
+    "labels": {
+      "instanceId": "0014778296b1240c29fcf728c6d3f3b43d2c9490d134d0223ce58b1fc36775bcbe4812e758c0c5882640c9db5badc4d004cd20d6ec6c984418d1a543724750ab08c787f1f6cd91a2e7e27ec75e5f49"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:37:22.086686622Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:37:21 +0000] [1] [INFO] Using worker: sync",
+    "timestamp": "2025-12-03T22:37:21.753178Z"
+  },
+  {
+    "insertId": "6930bba1000b7da8be2e48d2",
+    "labels": {
+      "instanceId": "0014778296b1240c29fcf728c6d3f3b43d2c9490d134d0223ce58b1fc36775bcbe4812e758c0c5882640c9db5badc4d004cd20d6ec6c984418d1a543724750ab08c787f1f6cd91a2e7e27ec75e5f49"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:37:22.086686622Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:37:21 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)",
+    "timestamp": "2025-12-03T22:37:21.753064Z"
+  },
+  {
+    "insertId": "6930bba1000b7d9627e91172",
+    "labels": {
+      "instanceId": "0014778296b1240c29fcf728c6d3f3b43d2c9490d134d0223ce58b1fc36775bcbe4812e758c0c5882640c9db5badc4d004cd20d6ec6c984418d1a543724750ab08c787f1f6cd91a2e7e27ec75e5f49"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:37:22.025822699Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"traveler-profile-service-1\" on port 8080.",
+    "timestamp": "2025-12-03T22:37:21.753046Z"
+  },
+  {
+    "insertId": "6930bba1000b728b9c0552fb",
+    "labels": {
+      "instanceId": "0014778296b1240c29fcf728c6d3f3b43d2c9490d134d0223ce58b1fc36775bcbe4812e758c0c5882640c9db5badc4d004cd20d6ec6c984418d1a543724750ab08c787f1f6cd91a2e7e27ec75e5f49"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:37:21.755177122Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:37:21 +0000] [1] [INFO] Starting gunicorn 23.0.0",
+    "timestamp": "2025-12-03T22:37:21.750219Z"
+  },
+  {
+    "insertId": "6930bba1000054b4833e08f2",
+    "labels": {
+      "instanceId": "0014778296b1240c29fcf728c6d3f3b43d2c9490d134d0223ce58b1fc36775bcbe4812e758c0c5882640c9db5badc4d004cd20d6ec6c984418d1a543724750ab08c787f1f6cd91a2e7e27ec75e5f49",
+      "scaling_reason": "DEPLOYMENT_ROLLOUT"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:37:21.024476060Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00003-9qp",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.",
+    "timestamp": "2025-12-03T22:37:21.021684Z"
+  },
+  {
+    "insertId": "1xf21afe3fenc",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "oauthInfo": {
+          "oauthClientId": "32555940559.apps.googleusercontent.com"
+        },
+        "principalEmail": "miguens@google.com",
+        "principalSubject": "user:miguens@google.com"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "run.services.update",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+          "resourceAttributes": {}
+        },
+        {
+          "granted": true,
+          "permission": "run.services.update",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+          "resourceAttributes": {
+            "name": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+            "service": "run.googleapis.com/",
+            "type": "run.googleapis.com/Service"
+          }
+        }
+      ],
+      "methodName": "google.cloud.run.v1.Services.ReplaceService",
+      "request": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.ReplaceServiceRequest",
+        "name": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+        "service": {
+          "apiVersion": "serving.knative.dev/v1",
+          "kind": "Service",
+          "metadata": {
+            "annotations": {
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "542.0.0",
+              "run.googleapis.com/ingress": "all",
+              "run.googleapis.com/ingress-status": "all",
+              "run.googleapis.com/operation-id": "a74cd9e1-2faa-4c32-99fd-ec3563236eef",
+              "run.googleapis.com/urls": "[\"https://traveler-profile-service-195821190183.us-central1.run.app\",\"https://traveler-profile-service-vd3gw5wpna-uc.a.run.app\"]",
+              "serving.knative.dev/creator": "miguens@google.com",
+              "serving.knative.dev/lastModifier": "miguens@google.com"
+            },
+            "creationTimestamp": "2025-12-03T22:15:39.125341Z",
+            "generation": 2,
+            "labels": {
+              "cloud.googleapis.com/location": "us-central1"
+            },
+            "name": "traveler-profile-service",
+            "namespace": "195821190183",
+            "resourceVersion": "AAZFE5kXb4U",
+            "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/services/traveler-profile-service",
+            "uid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+          },
+          "spec": {
+            "template": {
+              "metadata": {
+                "annotations": {
+                  "autoscaling.knative.dev/maxScale": "100",
+                  "run.googleapis.com/client-name": "gcloud",
+                  "run.googleapis.com/client-version": "542.0.0",
+                  "run.googleapis.com/startup-cpu-boost": "true"
+                },
+                "labels": {
+                  "client.knative.dev/nonce": "amishkcukn",
+                  "run.googleapis.com/startupProbeType": "Default"
+                }
+              },
+              "spec": {
+                "containerConcurrency": 80,
+                "containers": [
+                  {
+                    "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service",
+                    "resources": {
+                      "limits": {
+                        "cpu": "1000m",
+                        "memory": "512Mi"
+                      }
+                    }
+                  }
+                ],
+                "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+                "timeoutSeconds": 300
+              }
+            },
+            "traffic": [
+              {
+                "latestRevision": true,
+                "percent": 100
+              }
+            ]
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2025-12-03T22:18:55.409029Z",
+                "status": "True",
+                "type": "Ready"
+              },
+              {
+                "lastTransitionTime": "2025-12-03T22:18:54.140918Z",
+                "status": "True",
+                "type": "ConfigurationsReady"
+              },
+              {
+                "lastTransitionTime": "2025-12-03T22:18:55.372169Z",
+                "status": "True",
+                "type": "RoutesReady"
+              }
+            ],
+            "latestCreatedRevisionName": "traveler-profile-service-00002-cl9",
+            "latestReadyRevisionName": "traveler-profile-service-00002-cl9",
+            "observedGeneration": 2,
+            "traffic": [
+              {
+                "latestRevision": true,
+                "percent": 100,
+                "revisionName": "traveler-profile-service-00002-cl9"
+              }
+            ],
+            "url": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app"
+          }
+        }
+      },
+      "requestMetadata": {
+        "callerIp": "181.87.112.30",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/542.0.0 command/gcloud.run.deploy invocation-id/e8909a68b7c8489b91105377b19e3a62 environment/None environment-version/None client-os/MACOSX client-os-ver/24.6.0 client-pltf-arch/arm interactive/False from-script/True python/3.12.2 term/xterm-256color (Macintosh; Intel Mac OS X 24.6.0),gzip(gfe)",
+        "destinationAttributes": {},
+        "requestAttributes": {
+          "auth": {},
+          "time": "2025-12-03T22:37:16.333529Z"
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      },
+      "resourceName": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+      "serviceName": "run.googleapis.com"
+    },
+    "receiveTimestamp": "2025-12-03T22:37:16.915761856Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "NOTICE",
+    "timestamp": "2025-12-03T22:37:16.126761Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.011297100s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "66.249.84.171",
+      "requestMethod": "POST",
+      "requestSize": "1187",
+      "requestUrl": "https://traveler-profile-service-195821190183.us-central1.run.app/reinject_traveler_profile",
+      "responseSize": "704",
+      "serverIp": "34.143.79.2",
+      "status": 200,
+      "userAgent": "Google-Dialogflow"
+    },
+    "insertId": "6930b9df00088811d3b839f6",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2025-12-03T22:29:51.561956498Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "ca3ce45a18c1a437",
+    "timestamp": "2025-12-03T22:29:51.540559Z",
+    "trace": "projects/emea-bootcamp-2025/traces/e177eb050f8e4d819e986562be1770a0",
+    "traceSampled": true
+  },
+  {
+    "insertId": "nw0zuae3acjy",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.ReplaceService",
+      "resourceName": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Service",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "542.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/operation-id": "a74cd9e1-2faa-4c32-99fd-ec3563236eef",
+            "run.googleapis.com/urls": "[\"https://traveler-profile-service-195821190183.us-central1.run.app\",\"https://traveler-profile-service-vd3gw5wpna-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "miguens@google.com",
+            "serving.knative.dev/lastModifier": "miguens@google.com"
+          },
+          "creationTimestamp": "2025-12-03T22:15:39.125341Z",
+          "generation": 2,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "traveler-profile-service",
+          "namespace": "195821190183",
+          "resourceVersion": "AAZFE5kXb4U",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/services/traveler-profile-service",
+          "uid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "542.0.0",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "wofgurhucq",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1000m",
+                      "memory": "512Mi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+              "timeoutSeconds": 300
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2025-12-03T22:18:55.409029Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:18:54.140918Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:18:55.372169Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "traveler-profile-service-00002-cl9",
+          "latestReadyRevisionName": "traveler-profile-service-00002-cl9",
+          "observedGeneration": 2,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "traveler-profile-service-00002-cl9"
+            }
+          ],
+          "url": "https://traveler-profile-service-vd3gw5wpna-uc.a.run.app"
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Service traveler-profile-service."
+      }
+    },
+    "receiveTimestamp": "2025-12-03T22:18:56.284517836Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2025-12-03T22:18:55.424030Z"
+  },
+  {
+    "insertId": "nx76aed4clm",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.ReplaceService",
+      "resourceName": "namespaces/emea-bootcamp-2025/revisions/traveler-profile-service-00002-cl9",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Revision",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Revision",
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "100",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "542.0.0",
+            "run.googleapis.com/operation-id": "a74cd9e1-2faa-4c32-99fd-ec3563236eef",
+            "run.googleapis.com/startup-cpu-boost": "true",
+            "serving.knative.dev/creator": "miguens@google.com"
+          },
+          "creationTimestamp": "2025-12-03T22:18:48.570639Z",
+          "generation": 1,
+          "labels": {
+            "client.knative.dev/nonce": "wofgurhucq",
+            "cloud.googleapis.com/location": "us-central1",
+            "run.googleapis.com/startupProbeType": "Default",
+            "serving.knative.dev/configuration": "traveler-profile-service",
+            "serving.knative.dev/configurationGeneration": "2",
+            "serving.knative.dev/route": "traveler-profile-service",
+            "serving.knative.dev/service": "traveler-profile-service",
+            "serving.knative.dev/serviceUid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+          },
+          "name": "traveler-profile-service-00002-cl9",
+          "namespace": "195821190183",
+          "ownerReferences": [
+            {
+              "apiVersion": "serving.knative.dev/v1",
+              "blockOwnerDeletion": true,
+              "controller": true,
+              "kind": "Configuration",
+              "name": "traveler-profile-service",
+              "uid": "57cdc8dc-a119-42aa-9ea1-93a9500b5497"
+            }
+          ],
+          "resourceVersion": "AAZFE5kDpWY",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/revisions/traveler-profile-service-00002-cl9",
+          "uid": "4819b6a6-9434-4ba3-a0de-a5ba7663805c"
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:22dd5760ab3b24857ff32858dc6b0a614f3337598690911436868d1a1d5ea59b",
+              "name": "traveler-profile-service-1",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+          "timeoutSeconds": 300
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastTransitionTime": "2025-12-03T22:18:54.112102Z",
+              "message": "Deploying revision succeeded in 5.54s.",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:18:54.059520Z",
+              "message": "Containers became healthy.",
+              "status": "True",
+              "type": "ContainerHealthy"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:18:51.699880Z",
+              "message": "Container image import completed in 2.41s.",
+              "status": "True",
+              "type": "ContainerReady"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:18:53.175255Z",
+              "message": "Provisioning imported containers completed in 1.47s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+              "status": "True",
+              "type": "ResourcesAvailable"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "imageDigest": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:22dd5760ab3b24857ff32858dc6b0a614f3337598690911436868d1a1d5ea59b",
+              "name": "traveler-profile-service-1"
+            }
+          ],
+          "imageDigest": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:22dd5760ab3b24857ff32858dc6b0a614f3337598690911436868d1a1d5ea59b",
+          "logUrl": "https://console.cloud.google.com/logs/viewer?project=emea-bootcamp-2025&resource=cloud_run_revision/service_name/traveler-profile-service/revision_name/traveler-profile-service-00002-cl9&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22traveler-profile-service%22%0Aresource.labels.revision_name%3D%22traveler-profile-service-00002-cl9%22",
+          "observedGeneration": 1
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Revision traveler-profile-service-00002-cl9 with message: Deploying revision succeeded in 5.54s."
+      }
+    },
+    "receiveTimestamp": "2025-12-03T22:18:54.176189170Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2025-12-03T22:18:54.119201Z"
+  },
+  {
+    "insertId": "6930b74e0000b87766de8f17",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:18:54.364314465Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:18:54 +0000] [2] [INFO] Booting worker with pid: 2",
+    "timestamp": "2025-12-03T22:18:54.047223Z"
+  },
+  {
+    "insertId": "6930b74e0000a5610d457b74",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:18:54.266211695Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"traveler-profile-service-1\" on port 8080.",
+    "timestamp": "2025-12-03T22:18:54.042337Z"
+  },
+  {
+    "insertId": "6930b74e000079b4e682a5ec",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:18:54.364314465Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:18:54 +0000] [1] [INFO] Using worker: sync",
+    "timestamp": "2025-12-03T22:18:54.031156Z"
+  },
+  {
+    "insertId": "6930b74e000079550a6b0de7",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:18:54.364314465Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:18:54 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)",
+    "timestamp": "2025-12-03T22:18:54.031061Z"
+  },
+  {
+    "insertId": "6930b74e00006bdcfa30ef8b",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:18:54.030359971Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "[2025-12-03 22:18:54 +0000] [1] [INFO] Starting gunicorn 23.0.0",
+    "timestamp": "2025-12-03T22:18:54.027612Z"
+  },
+  {
+    "insertId": "6930b74d000408ba3e9a710d",
+    "labels": {
+      "instanceId": "00147782961ac08df5a8b5dea9ebee6cd79941e93ca28771b9190963ed4c80055e995bed61f0ffda661643c59a69e70021198c61c9df5d75b5196fa633fd2912c66197fac87efaa460316d3b6ff97e",
+      "scaling_reason": "DEPLOYMENT_ROLLOUT"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:18:53.269640824Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00002-cl9",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.",
+    "timestamp": "2025-12-03T22:18:53.264378Z"
+  },
+  {
+    "insertId": "19j1jpvd7coz",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "oauthInfo": {
+          "oauthClientId": "32555940559.apps.googleusercontent.com"
+        },
+        "principalEmail": "miguens@google.com",
+        "principalSubject": "user:miguens@google.com"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "run.services.update",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+          "resourceAttributes": {}
+        },
+        {
+          "granted": true,
+          "permission": "run.services.update",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+          "resourceAttributes": {
+            "name": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+            "service": "run.googleapis.com/",
+            "type": "run.googleapis.com/Service"
+          }
+        }
+      ],
+      "methodName": "google.cloud.run.v1.Services.ReplaceService",
+      "request": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.ReplaceServiceRequest",
+        "name": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+        "service": {
+          "apiVersion": "serving.knative.dev/v1",
+          "kind": "Service",
+          "metadata": {
+            "annotations": {
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "542.0.0",
+              "run.googleapis.com/ingress": "all",
+              "run.googleapis.com/ingress-status": "all",
+              "run.googleapis.com/operation-id": "e255ce65-9cc7-436b-90ef-430bf32be59e",
+              "run.googleapis.com/urls": "[\"https://traveler-profile-service-195821190183.us-central1.run.app\"]",
+              "serving.knative.dev/creator": "miguens@google.com",
+              "serving.knative.dev/lastModifier": "miguens@google.com"
+            },
+            "creationTimestamp": "2025-12-03T22:15:39.125341Z",
+            "generation": 1,
+            "labels": {
+              "cloud.googleapis.com/location": "us-central1"
+            },
+            "name": "traveler-profile-service",
+            "namespace": "195821190183",
+            "resourceVersion": "AAZFE5Nyodg",
+            "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/services/traveler-profile-service",
+            "uid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+          },
+          "spec": {
+            "template": {
+              "metadata": {
+                "annotations": {
+                  "autoscaling.knative.dev/maxScale": "100",
+                  "run.googleapis.com/client-name": "gcloud",
+                  "run.googleapis.com/client-version": "542.0.0",
+                  "run.googleapis.com/startup-cpu-boost": "true"
+                },
+                "labels": {
+                  "client.knative.dev/nonce": "wofgurhucq",
+                  "run.googleapis.com/startupProbeType": "Default"
+                }
+              },
+              "spec": {
+                "containerConcurrency": 80,
+                "containers": [
+                  {
+                    "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service",
+                    "resources": {
+                      "limits": {
+                        "cpu": "1000m",
+                        "memory": "512Mi"
+                      }
+                    }
+                  }
+                ],
+                "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+                "timeoutSeconds": 300
+              }
+            },
+            "traffic": [
+              {
+                "latestRevision": true,
+                "percent": 100
+              }
+            ]
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2025-12-03T22:17:20.624753Z",
+                "reason": "HealthCheckContainerError",
+                "status": "False",
+                "type": "Ready"
+              },
+              {
+                "lastTransitionTime": "2025-12-03T22:17:20.554101Z",
+                "reason": "HealthCheckContainerError",
+                "status": "False",
+                "type": "ConfigurationsReady"
+              },
+              {
+                "lastTransitionTime": "2025-12-03T22:17:20.624753Z",
+                "reason": "HealthCheckContainerError",
+                "status": "False",
+                "type": "RoutesReady"
+              }
+            ],
+            "latestCreatedRevisionName": "traveler-profile-service-00001-sbw",
+            "observedGeneration": 1
+          }
+        }
+      },
+      "requestMetadata": {
+        "callerIp": "181.87.112.30",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/542.0.0 command/gcloud.run.deploy invocation-id/5bf3cdecb56b481790af08b075961ca6 environment/None environment-version/None client-os/MACOSX client-os-ver/24.6.0 client-pltf-arch/arm interactive/False from-script/True python/3.12.2 term/xterm-256color (Macintosh; Intel Mac OS X 24.6.0),gzip(gfe)",
+        "destinationAttributes": {},
+        "requestAttributes": {
+          "auth": {},
+          "time": "2025-12-03T22:18:48.524358Z"
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      },
+      "resourceName": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+      "serviceName": "run.googleapis.com"
+    },
+    "receiveTimestamp": "2025-12-03T22:18:49.345845130Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "NOTICE",
+    "timestamp": "2025-12-03T22:18:48.373742Z"
+  },
+  {
+    "insertId": "-bxdeube1y4h0",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.CreateService",
+      "resourceName": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Service",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "542.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/operation-id": "e255ce65-9cc7-436b-90ef-430bf32be59e",
+            "run.googleapis.com/urls": "[\"https://traveler-profile-service-195821190183.us-central1.run.app\"]",
+            "serving.knative.dev/creator": "miguens@google.com",
+            "serving.knative.dev/lastModifier": "miguens@google.com"
+          },
+          "creationTimestamp": "2025-12-03T22:15:39.125341Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "traveler-profile-service",
+          "namespace": "195821190183",
+          "resourceVersion": "AAZFE5NwvA0",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/services/traveler-profile-service",
+          "uid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "542.0.0",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "kjytcohbhz",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1000m",
+                      "memory": "512Mi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+              "timeoutSeconds": 300
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastTransitionTime": "2025-12-03T22:17:20.554101Z",
+              "message": "The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.\n\nLogs URL: https://console.cloud.google.com/logs/viewer?project=emea-bootcamp-2025&resource=cloud_run_revision/service_name/traveler-profile-service/revision_name/traveler-profile-service-00001-sbw&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22traveler-profile-service%22%0Aresource.labels.revision_name%3D%22traveler-profile-service-00001-sbw%22 \nFor more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start",
+              "reason": "HealthCheckContainerError",
+              "status": "False",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:17:20.554101Z",
+              "message": "The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.\n\nLogs URL: https://console.cloud.google.com/logs/viewer?project=emea-bootcamp-2025&resource=cloud_run_revision/service_name/traveler-profile-service/revision_name/traveler-profile-service-00001-sbw&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22traveler-profile-service%22%0Aresource.labels.revision_name%3D%22traveler-profile-service-00001-sbw%22 \nFor more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start",
+              "reason": "HealthCheckContainerError",
+              "status": "False",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:15:41.409529Z",
+              "message": "Provisioning revision instances to receive traffic.",
+              "status": "Unknown",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "traveler-profile-service-00001-sbw",
+          "observedGeneration": 1
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "code": 9,
+        "message": "Ready condition status changed to False for Service traveler-profile-service with message: The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.\n\nLogs URL: https://console.cloud.google.com/logs/viewer?project=emea-bootcamp-2025&resource=cloud_run_revision/service_name/traveler-profile-service/revision_name/traveler-profile-service-00001-sbw&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22traveler-profile-service%22%0Aresource.labels.revision_name%3D%22traveler-profile-service-00001-sbw%22 \nFor more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start"
+      }
+    },
+    "receiveTimestamp": "2025-12-03T22:17:21.623769027Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "timestamp": "2025-12-03T22:17:20.627612Z"
+  },
+  {
+    "insertId": "7tkxlhe1jtzm",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.CreateService",
+      "resourceName": "namespaces/emea-bootcamp-2025/revisions/traveler-profile-service-00001-sbw",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Revision",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Revision",
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "100",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "542.0.0",
+            "run.googleapis.com/operation-id": "e255ce65-9cc7-436b-90ef-430bf32be59e",
+            "run.googleapis.com/startup-cpu-boost": "true",
+            "serving.knative.dev/creator": "miguens@google.com"
+          },
+          "creationTimestamp": "2025-12-03T22:15:39.331645Z",
+          "generation": 1,
+          "labels": {
+            "client.knative.dev/nonce": "kjytcohbhz",
+            "cloud.googleapis.com/location": "us-central1",
+            "run.googleapis.com/startupProbeType": "Default",
+            "serving.knative.dev/configuration": "traveler-profile-service",
+            "serving.knative.dev/configurationGeneration": "1",
+            "serving.knative.dev/route": "traveler-profile-service",
+            "serving.knative.dev/service": "traveler-profile-service",
+            "serving.knative.dev/serviceUid": "c72568e7-dfcb-45ad-9aab-04f4cc53fbae"
+          },
+          "name": "traveler-profile-service-00001-sbw",
+          "namespace": "195821190183",
+          "ownerReferences": [
+            {
+              "apiVersion": "serving.knative.dev/v1",
+              "blockOwnerDeletion": true,
+              "controller": true,
+              "kind": "Configuration",
+              "name": "traveler-profile-service",
+              "uid": "57cdc8dc-a119-42aa-9ea1-93a9500b5497"
+            }
+          ],
+          "resourceVersion": "AAZFE5Nvdgc",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/195821190183/revisions/traveler-profile-service-00001-sbw",
+          "uid": "c1242819-37bf-44bf-b71e-092570cb1953"
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:84cb3f07fc7023413a46f702debacaebed38833f113f0e660535e05cd5d34364",
+              "name": "traveler-profile-service-1",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "195821190183-compute@developer.gserviceaccount.com",
+          "timeoutSeconds": 300
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastTransitionTime": "2025-12-03T22:17:20.514567Z",
+              "message": "The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.\n\nLogs URL: https://console.cloud.google.com/logs/viewer?project=emea-bootcamp-2025&resource=cloud_run_revision/service_name/traveler-profile-service/revision_name/traveler-profile-service-00001-sbw&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22traveler-profile-service%22%0Aresource.labels.revision_name%3D%22traveler-profile-service-00001-sbw%22 \nFor more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start",
+              "reason": "HealthCheckContainerError",
+              "status": "False",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:17:20.514567Z",
+              "message": "The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.\n\nLogs URL: https://console.cloud.google.com/logs/viewer?project=emea-bootcamp-2025&resource=cloud_run_revision/service_name/traveler-profile-service/revision_name/traveler-profile-service-00001-sbw&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22traveler-profile-service%22%0Aresource.labels.revision_name%3D%22traveler-profile-service-00001-sbw%22 \nFor more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start",
+              "reason": "HealthCheckContainerError",
+              "status": "False",
+              "type": "ContainerHealthy"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:15:41.282573Z",
+              "message": "Container image import completed in 1.24s.",
+              "status": "True",
+              "type": "ContainerReady"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:17:18.849760Z",
+              "message": "Provisioning imported containers completed in 1m37.57s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+              "status": "True",
+              "type": "ResourcesAvailable"
+            },
+            {
+              "lastTransitionTime": "2025-12-03T22:17:18.849760Z",
+              "message": "System will retry after 0:00:00 from lastTransitionTime for attempt 0.",
+              "reason": "ImmediateRetry",
+              "severity": "Info",
+              "status": "True",
+              "type": "Retry"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "imageDigest": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:84cb3f07fc7023413a46f702debacaebed38833f113f0e660535e05cd5d34364",
+              "name": "traveler-profile-service-1"
+            }
+          ],
+          "imageDigest": "gcr.io/emea-bootcamp-2025/traveler_profile_service@sha256:84cb3f07fc7023413a46f702debacaebed38833f113f0e660535e05cd5d34364",
+          "logUrl": "https://console.cloud.google.com/logs/viewer?project=emea-bootcamp-2025&resource=cloud_run_revision/service_name/traveler-profile-service/revision_name/traveler-profile-service-00001-sbw&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22traveler-profile-service%22%0Aresource.labels.revision_name%3D%22traveler-profile-service-00001-sbw%22",
+          "observedGeneration": 1
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "code": 9,
+        "message": "Ready condition status changed to False for Revision traveler-profile-service-00001-sbw with message: The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.\n\nLogs URL: https://console.cloud.google.com/logs/viewer?project=emea-bootcamp-2025&resource=cloud_run_revision/service_name/traveler-profile-service/revision_name/traveler-profile-service-00001-sbw&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22traveler-profile-service%22%0Aresource.labels.revision_name%3D%22traveler-profile-service-00001-sbw%22 \nFor more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start"
+      }
+    },
+    "receiveTimestamp": "2025-12-03T22:17:20.569055909Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00001-sbw",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "timestamp": "2025-12-03T22:17:20.529082Z"
+  },
+  {
+    "insertId": "6930b6f00007d424248e3667",
+    "labels": {
+      "instanceId": "0014778296bcc68806f8ffb7306d5423e35f3cd01c77a841c76a97a8694e48ec0c9189cf137ea4adc999aee35f0ac809000fe9f913f4bf27bd62c1e968a7b05803ae4fc42d4360929c1960c010cb3c"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:17:20.613039466Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00001-sbw",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "textPayload": "Default STARTUP TCP probe failed 1 time consecutively for container \"traveler-profile-service-1\" on port 8080. The instance was not started.\nConnection failed with status CANCELLED.",
+    "timestamp": "2025-12-03T22:17:20.513060Z"
+  },
+  {
+    "insertId": "6930b6f000066efdc979a86e",
+    "labels": {
+      "container_name": "traveler-profile-service-1",
+      "instanceId": "0014778296bcc68806f8ffb7306d5423e35f3cd01c77a841c76a97a8694e48ec0c9189cf137ea4adc999aee35f0ac809000fe9f913f4bf27bd62c1e968a7b05803ae4fc42d4360929c1960c010cb3c"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:17:20.613039466Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00001-sbw",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "WARNING",
+    "textPayload": "Container called exit(1).",
+    "timestamp": "2025-12-03T22:17:20.421560035Z"
+  },
+  {
+    "errorGroups": [
+      {
+        "id": "CNbopI7PpoKxOQ"
+      }
+    ],
+    "insertId": "6930b6ef000a5134d05007f6",
+    "labels": {
+      "instanceId": "0014778296bcc68806f8ffb7306d5423e35f3cd01c77a841c76a97a8694e48ec0c9189cf137ea4adc999aee35f0ac809000fe9f913f4bf27bd62c1e968a7b05803ae4fc42d4360929c1960c010cb3c"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-12-03T22:17:19.679427668Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00001-sbw",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/app.py\", line 3, in <module>\n    from flask import Flask, request, jsonify\nModuleNotFoundError: No module named 'flask'",
+    "timestamp": "2025-12-03T22:17:19.676148Z"
+  },
+  {
+    "insertId": "6930b6ee000e6141fd0eb944",
+    "labels": {
+      "instanceId": "0014778296bcc68806f8ffb7306d5423e35f3cd01c77a841c76a97a8694e48ec0c9189cf137ea4adc999aee35f0ac809000fe9f913f4bf27bd62c1e968a7b05803ae4fc42d4360929c1960c010cb3c",
+      "scaling_reason": "DEPLOYMENT_ROLLOUT"
+    },
+    "logName": "projects/emea-bootcamp-2025/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2025-12-03T22:17:18.945648782Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "traveler-profile-service",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "traveler-profile-service-00001-sbw",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.",
+    "timestamp": "2025-12-03T22:17:18.942401Z"
+  },
+  {
+    "insertId": "v2t4dse5saf0",
+    "logName": "projects/emea-bootcamp-2025/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "oauthInfo": {
+          "oauthClientId": "32555940559.apps.googleusercontent.com"
+        },
+        "principalEmail": "miguens@google.com",
+        "principalSubject": "user:miguens@google.com"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "run.services.create",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+          "resourceAttributes": {}
+        },
+        {
+          "granted": true,
+          "permission": "run.services.create",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+          "resourceAttributes": {
+            "name": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+            "service": "run.googleapis.com/",
+            "type": "run.googleapis.com/Service"
+          }
+        }
+      ],
+      "methodName": "google.cloud.run.v1.Services.CreateService",
+      "request": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.CreateServiceRequest",
+        "parent": "namespaces/emea-bootcamp-2025",
+        "service": {
+          "apiVersion": "serving.knative.dev/v1",
+          "kind": "Service",
+          "metadata": {
+            "annotations": {
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "542.0.0"
+            },
+            "name": "traveler-profile-service",
+            "namespace": "emea-bootcamp-2025"
+          },
+          "spec": {
+            "template": {
+              "metadata": {
+                "annotations": {
+                  "run.googleapis.com/client-name": "gcloud",
+                  "run.googleapis.com/client-version": "542.0.0",
+                  "run.googleapis.com/startup-cpu-boost": "True"
+                },
+                "labels": {
+                  "client.knative.dev/nonce": "kjytcohbhz"
+                }
+              },
+              "spec": {
+                "containers": [
+                  {
+                    "image": "gcr.io/emea-bootcamp-2025/traveler_profile_service",
+                    "name": ""
+                  }
+                ]
+              }
+            }
+          },
+          "status": {}
+        }
+      },
+      "requestMetadata": {
+        "callerIp": "181.87.112.30",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/542.0.0 command/gcloud.run.deploy invocation-id/1357eb9a9fcb4bf3b11df4d4c500f9d7 environment/None environment-version/None client-os/MACOSX client-os-ver/24.6.0 client-pltf-arch/arm interactive/False from-script/True python/3.12.2 term/xterm-256color (Macintosh; Intel Mac OS X 24.6.0),gzip(gfe)",
+        "destinationAttributes": {},
+        "requestAttributes": {
+          "auth": {},
+          "time": "2025-12-03T22:15:39.222167Z"
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      },
+      "resourceName": "namespaces/emea-bootcamp-2025/services/traveler-profile-service",
+      "serviceName": "run.googleapis.com"
+    },
+    "receiveTimestamp": "2025-12-03T22:15:39.923068226Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "emea-bootcamp-2025",
+        "revision_name": "",
+        "service_name": "traveler-profile-service"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "NOTICE",
+    "timestamp": "2025-12-03T22:15:39.016849Z"
+  }
+]
