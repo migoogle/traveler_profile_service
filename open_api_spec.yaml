@@ -1,0 +1,175 @@
+openapi: 3.0.0
+info:
+  title: traveler_profile_service
+  description: >-
+    API to process traveler data extracted by AI Coach and return it formatted
+    for the Agent UI.
+  version: 1.0.0
+servers:
+  - url: 'https://traveler-profile-service-195821190183.us-central1.run.app'
+paths:
+  /reinject_traveler_profile:
+    post:
+      summary: Update Traveler Profile
+      description: >-
+        Receives extracted entities from the conversation history and returns a
+        structured object for the UI.
+      operationId: reinjectTravelerProfile
+      requestBody:
+        description: JSON payload containing extracted traveler entities.
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                client_first_name:
+                  type: string
+                  description: Client First Name
+                client_last_name:
+                  type: string
+                  description: Client Last Name
+                date_of_birth:
+                  type: string
+                  description: Date of Birth. Format DD-MM-YYYY
+                has_booked_before:
+                  type: boolean
+                  description: True if the client has booked travel with our agency before.
+                has_loyalty_program:
+                  type: boolean
+                  description: >-
+                    True if the client currently has a travel loyalty program
+                    with us.
+                email_address:
+                  type: string
+                  description: Client Email Address
+                phone_number:
+                  type: string
+                  description: Client Phone number
+                is_primary_traveler:
+                  type: boolean
+                  description: True if the user is the primary traveler for this trip.
+                household_booked_with_us:
+                  type: boolean
+                  description: >-
+                    True if any travelers in the household are currently booked
+                    with us.
+                has_valid_passport:
+                  type: boolean
+                  description: True if the client owns a valid passport.
+                interested_in_insurance:
+                  type: boolean
+                  description: True if interested in travel insurance.
+                current_insurance_provider:
+                  type: string
+                  description: Who is the current travel insurance provider (if any).
+                trip_start_date:
+                  type: string
+                  description: Intended trip start date. Format DD-MM-YYYY
+                trip_end_date:
+                  type: string
+                  description: Intended trip end date. Format DD-MM-YYYY
+                has_additional_travelers:
+                  type: boolean
+                  description: True if there are additional travelers on this booking.
+                visa_denials_past_3_years:
+                  type: boolean
+                  description: >-
+                    True if client had visa denials or entry refusals in the
+                    past 3 years.
+                missed_payments_past_3_years:
+                  type: boolean
+                  description: >-
+                    True if client missed significant travel payments or had
+                    bookings cancelled for non-payment in past 3 years.
+                trip_disruptions_past_6_years:
+                  type: boolean
+                  description: >-
+                    True if client had more than 1 trip disrupted due to
+                    traveler-caused issues in past 6 years.
+                primary_stay_location:
+                  type: string
+                  description: City/region where the client will primarily be staying.
+                primary_contact_during_travel:
+                  type: string
+                  description: Who will be the primary point of contact during travel.
+                travel_club_affiliations:
+                  type: string
+                  description: >-
+                    Names of travel clubs, employer affiliations, or
+                    student/alumni groups.
+                preferred_departure_details:
+                  type: string
+                  description: 'Preferred departure year, month, and destination.'
+                last_trip_booking_type:
+                  type: string
+                  description: >-
+                    Was the last major trip booked as a package, custom
+                    itinerary, or last-minute deal?
+                planned_booking_date:
+                  type: string
+                  description: Planned booking date for this trip. Format DD-MM-YYYY
+                payment_preference:
+                  type: string
+                  description: >-
+                    Will this trip be paid upfront or financed through a payment
+                    plan?
+                winter_conditions_travel:
+                  type: boolean
+                  description: >-
+                    True if traveling during winter conditions or need
+                    winter-specific gear.
+                document_limitations:
+                  type: string
+                  description: >-
+                    Any known limitations with travel documents (e.g., expired
+                    passport).
+                safety_tools_usage:
+                  type: string
+                  description: >-
+                    Do you use any travel safety tools (e.g., luggage trackers,
+                    secure ID tags)?
+                principal_decision_maker:
+                  type: string
+                  description: Who is the principal decision-maker for this trip?
+                planning_percentage:
+                  type: string
+                  description: >-
+                    If multiple travelers, what percentage of the trip planning
+                    does each traveler handle?
+                is_business_purpose:
+                  type: boolean
+                  description: >-
+                    True if any part of this trip will be for business or
+                    commercial purposes.
+                distance_home_to_airport:
+                  type: string
+                  description: >-
+                    Typical journey distance from home to the departure airport
+                    (km/miles).
+                annual_travel_distance:
+                  type: string
+                  description: >-
+                    Approximate annual travel distance (business and personal)
+                    in km/miles.
+                claims_losses_past_10_years:
+                  type: boolean
+                  description: >-
+                    True if client had any trip claims, losses, or major
+                    disruptions in the past 10 years.
+                has_smartphone_data:
+                  type: boolean
+                  description: True if client has a smartphone with a data plan.
+      responses:
+        '200':
+          description: Successful response containing the UI payload.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  agentDisplayMessage:
+                    type: object
+                    description: >-
+                      The final traveler profile object processed by the system
+                      to be rendered by the UI.
